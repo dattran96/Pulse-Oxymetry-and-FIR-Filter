@@ -2,7 +2,7 @@
 
 This project includes the analog-frontend and the digital-backend
 
-************************ Analog-frontend ************************:
+************************ Analog-frontend ************************
 - Signal from dual LED( red led and infrared led) will be amplified through an Op-Amp before it's fed into an ADC.<br/>
 
 
