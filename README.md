@@ -21,10 +21,10 @@ This project includes the analog-frontend and the digital-backend
 
 Guidence:
 
-1. Open Synopsis Design Vision, import verilog top module to generate Netlist for Controller and FIR filter:
+1. Open Synopsis Design Vision, import verilog top module to generate Netlist for Controller and FIR filter:<br/>
   import Top_Module_Controller_and_FIR.v <br/>
 
-2. Open Cadence Encounter, execute the follow file to do floorplan, placement and routing:
+2. Open Cadence Encounter, execute the follow file to do floorplan, placement and routing:<br/>
   01-setup_tech <br/>
   02-load_design <br/> 
   03-floorplan.tcl <br/>
