@@ -1,0 +1,14 @@
+ncls(64): 15.10-s002: (c) Copyright 1995-2015 Cadence Design Systems, Inc.
+DEFINE cdsDefTechLib $CDS_INST_DIR/tools/dfII/etc/cdsDefTechLib 
+|
+ncls: *W,DLCPTH (./cds.lib,1): cds.lib Invalid path '/cadstud/cds03/cadence/2015-16/RHELx86/INCISIVE_15.10.002/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE basic $CDS_INST_DIR/tools/dfII/etc/cdslib/basic 
+|
+ncls: *W,DLCPTH (./cds.lib,2): cds.lib Invalid path '/cadstud/cds03/cadence/2015-16/RHELx86/INCISIVE_15.10.002/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE analogLib $CDS_INST_DIR/tools/dfII/etc/cdslib/artist/analogLib
+|
+ncls: *W,DLCPTH (./cds.lib,3): cds.lib Invalid path '/cadstud/cds03/cadence/2015-16/RHELx86/INCISIVE_15.10.002/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+ncls: *W,DLNOHV: Unable to find an 'hdl.var' file to load in.
+	module HDL_Lab_10.Controller:functional (VST)
+	module HDL_Lab_10.FIR_Filter_IR:functional (VST)
+	module HDL_Lab_10.FIR_Filter_RED:functional (VST)

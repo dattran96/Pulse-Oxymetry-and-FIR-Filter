@@ -1,0 +1,8 @@
+set PROJECT_PATH	"/home/nicoa/Projekte/CGRA_40nm/PE_V1"
+set REP_PATH		"/home/nicoa/Projekte/CGRA_40nm/PE_V1/syn/log"
+set TOP_LEVEL_MODULE	"PE_top"
+
+set FILE_LIST	{PE_top.sv mux.sv alu.sv reg_file.sv cfg_mem.sv barrel_shifter.sv complementer.sv}
+# block_multiplier.sv
+
+set verilogout_no_tri true

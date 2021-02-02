@@ -1,0 +1,31 @@
+#################################
+# PLACEMENT
+#################################
+
+# settings:
+set_interactive_constraint_modes timing
+set_propagated_clock [all_clocks]
+
+# Delete existing clock trees:
+deleteClockTree -all
+
+# read Clock tree specification:
+specifyClockTree -file script/Clock.ctstch
+
+# synthesize Clock tree:
+ckSynthesis -report reports/clock/clock.report -forceReconvergent -breakLoop
+
+# update timing constraints:
+update_constraint_mode -name timing -sdc_files [list script/timing_postCTS.sdc]
+
+# update timing settings:
+set_analysis_view -update_timing -setup {tt} -hold {tt}
+set_interactive_constraint_modes timing
+set_propagated_clock [all_clocks]
+setAnalysisMode -skew true -clockPropagation sdcControl
+
+# optimize Design:
+optDesign -postCTS -outDir reports/timing
+
+# Save the Design:
+saveDesign designs/${TOP_LEVEL_MODULE}_clocked.enc

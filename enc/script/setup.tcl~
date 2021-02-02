@@ -1,0 +1,20 @@
+#################################
+# SETUP ENVIRONMENT
+#################################
+
+set TOP_LEVEL_MODULE	"top_module"
+
+# Set Designmode to 40nm:
+setDesignMode -process 40
+
+# Multi CPU usage:
+setMultiCpuUsage -localCpu max -cpuPerRemoteHost 1 -remoteHost 0 -keepLicense true
+setDistributeHost -local
+
+# Set routing layers:
+setNanoRouteMode -quiet -routeTopRoutingLayer 7
+setNanoRouteMode -quiet -routeWithTimingDriven true
+
+setPlaceMode -checkPinLayerForAccess { {1 2 3 4 5 6 7} } -maxRouteLayer 7
+
+setNanoRouteMode -envResistanceFromCapTable true

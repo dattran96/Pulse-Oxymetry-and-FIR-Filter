@@ -1,0 +1,35 @@
+# Version:1.0 MMMC View Definition File
+# Do Not Remove Above Line
+
+### SETUP #######################################################
+# Create typical corner:
+create_rc_corner -name typ -T {25} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0} -qx_tech_file {/cad/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/RuleDecks/QRC/G-DF-LOGIC_MIXED_MODE65N-1P8M1T0F1U-LL_LOW_K_TOP_METAL32.5K-QRC-LPE-1.0-P1/typical/qrcTechFile}
+#
+# Create worst corner:
+create_rc_corner -name worst -T {125} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0} -qx_tech_file {/cad/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/RuleDecks/QRC/G-DF-LOGIC_MIXED_MODE65N-1P8M1T0F1U-LL_LOW_K_TOP_METAL32.5K-QRC-LPE-1.0-P1/rcmax/qrcTechFile}
+#
+# Create best corner:
+create_rc_corner -name best -T {-40} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0} -qx_tech_file {/cad/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/RuleDecks/QRC/G-DF-LOGIC_MIXED_MODE65N-1P8M1T0F1U-LL_LOW_K_TOP_METAL32.5K-QRC-LPE-1.0-P1/rcmin/qrcTechFile}
+#
+# Setup typical timing libraries:
+create_library_set -name typ -timing {/cad/synopsys/libs/UMC_65_LL/synopsys/ccs/uk65lscllmvbbh_120c25_tc_ccs.lib /cad/synopsys/libs/UMC_65_LL/synopsys/ccs/uk65lscllmvbbl_120c25_tc_ccs.lib /cad/synopsys/libs/UMC_65_LL/synopsys/ccs/uk65lscllmvbbr_120c25_tc_ccs.lib}
+#
+# Setup worst case timing libraries:
+create_library_set -name worst -timing {/cad/synopsys/libs/UMC_65_LL/synopsys/ccs/uk65lscllmvbbh_108c125_wc_ccs.lib /cad/synopsys/libs/UMC_65_LL/synopsys/ccs/uk65lscllmvbbl_108c125_wc_ccs.lib /cad/synopsys/libs/UMC_65_LL/synopsys/ccs/uk65lscllmvbbr_108c125_wc_ccs.lib}
+#
+# Setup best case timing libraries:
+create_library_set -name best -timing {/cad/synopsys/libs/UMC_65_LL/synopsys/ccs/uk65lscllmvbbh_132c-40_bc_ccs.lib /cad/synopsys/libs/UMC_65_LL/synopsys/ccs/uk65lscllmvbbl_132c-40_bc_ccs.lib /cad/synopsys/libs/UMC_65_LL/synopsys/ccs/uk65lscllmvbbr_132c-40_bc_ccs.lib}
+#################################################################
+
+# Create delay corners:
+create_delay_corner -name typ -library_set {typ} -rc_corner {typ}
+create_delay_corner -name worst -library_set {worst} -rc_corner {worst}
+create_delay_corner -name best -library_set {best} -rc_corner {best}
+
+# Create analysis views:
+create_analysis_view -name typ -constraint_mode {timing_constraints} -delay_corner {typ}
+create_analysis_view -name worst -constraint_mode {timing_constraints} -delay_corner {worst}
+create_analysis_view -name best -constraint_mode {timing_constraints} -delay_corner {best}
+
+# set analysis views for setup and hold timing checks:
+set_analysis_view -setup {worst} -hold {best}

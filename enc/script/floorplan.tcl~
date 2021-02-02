@@ -1,0 +1,74 @@
+#################################
+# FLOORPLAN
+#################################
+
+# INFO: these are examples!
+# ToDo: Modify to match design!!!
+
+# specifiy core size and I/O distance:
+floorPlan -site core12T -s 225.0 210.0 6.72 6.72 6.72 6.72
+
+# Structured Data Path:
+#readSdpFile -file script/reg_file_new.sdp
+#setObjFPlanBox RplGroup regfile 11.8 12.2 178.2 125.6
+
+# Place Macros and Plan Groups:
+relativePlace cfg_mem_i_cfg_sram_i CORE -orientation R90 -relation L -alignedBy B -xSpace 0.00 -ySpace 0.00
+addHaloToBlock 4 4 4 4 -allBlock
+#setObjFPlanBox Module reg_file_i 90.0 7.000 232.0 148.12
+#setObjFPlanBox Module alu_i 90.0 148.12 232.0 217.0
+
+# Connect P/G Nets:
+globalNetConnect VDD -type pgpin -pin VDD -inst * -module {}
+globalNetConnect VSS -type pgpin -pin VSS -inst * -module {}
+globalNetConnect VSS -type tielo -pin VSS -inst * -module {}
+globalNetConnect VDD -type tiehi -pin VDD -inst * -module {}
+
+# Global Power Ring:
+addRing -center 0 -stacked_via_top_layer AP -around core -jog_distance 0.07 -threshold 0.07 -nets {VDD VSS} -stacked_via_bottom_layer M1 -layer {bottom M2 top M2 right M1 left M1} -width 1.96 -spacing 0.56 -offset 0.84 -extend_corner {tl lt tr bl br rb lb rt}
+
+# SRAM Power Ring:
+addRing -stacked_via_top_layer AP -around each_block -jog_distance 0.07 -threshold 0.07 -type block_rings -nets {VSS VDD} -stacked_via_bottom_layer M1 -layer {bottom M2 top M2 right M1 left M1} -width 1 -spacing 0.5 -offset 0.5
+addRing -stacked_via_top_layer AP -around each_block -jog_distance 0.07 -threshold 0.07 -type block_rings -nets {VSS VDD} -stacked_via_bottom_layer M1 -layer {bottom M4 top M4 right M5 left M5} -width 1 -spacing 0.5 -offset 0.5
+
+# Connect Standard Cell Power:
+sroute -connect { blockPin padPin padRing corePin } -layerChangeRange { M1 M3 } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer M1 -allowLayerChange 1 -targetViaTopLayer AP -crossoverViaTopLayer AP -targetViaBottomLayer M1 -nets { VDD VSS }
+
+# Connect SRAM Power Pins:
+sroute -connect { blockPin } -layerChangeRange { M1 AP } -blockPinTarget { nearestRingStripe nearestTarget } -checkAlignedSecondaryPin 1 -blockPin all -allowJogging 1 -crossoverViaBottomLayer M1 -allowLayerChange 1 -targetViaTopLayer AP -crossoverViaTopLayer AP -targetViaBottomLayer M1 -nets { VDD VSS }
+
+# SRAM Power Stripes:
+addStripe -block_ring_top_layer_limit M6 -max_same_layer_jog_length 4 -padcore_ring_bottom_layer_limit M4 -set_to_set_distance 9.12 -stacked_via_top_layer AP -padcore_ring_top_layer_limit M6 -spacing 0.56 -xleft_offset 1.12 -xright_offset 145.89 -merge_stripes_value 0.07 -layer M5 -block_ring_bottom_layer_limit M4 -width 4 -nets {VDD VSS} -stacked_via_bottom_layer M1
+
+# Power Mesh horizontal:
+addStripe -block_ring_top_layer_limit M9 -max_same_layer_jog_length 4 -padcore_ring_bottom_layer_limit M7 -set_to_set_distance 10.08 -ybottom_offset 2.94 -stacked_via_top_layer AP -padcore_ring_top_layer_limit M9 -spacing 4.2 -merge_stripes_value 0.07 -direction horizontal -layer M8 -block_ring_bottom_layer_limit M7 -width 0.84 -nets {VDD VSS} -stacked_via_bottom_layer M1
+
+# Power Mesh vertical:
+addStripe -block_ring_top_layer_limit AP -max_same_layer_jog_length 4 -padcore_ring_bottom_layer_limit M8 -set_to_set_distance 40 -stacked_via_top_layer AP -padcore_ring_top_layer_limit AP -spacing 18 -xleft_offset 16 -merge_stripes_value 0.07 -layer M9 -block_ring_bottom_layer_limit M8 -width 2.0 -nets {VDD VSS} -stacked_via_bottom_layer M1
+
+# Pin placement:
+
+# cfg_addr_in, cfg_we_in, cfg_data_in:
+editPin -side Top -pinDepth 0.39 -fixedPin 1 -fixOverlap 1 -layer 7 -spreadType start -spacing 0.84 -start 42.0 223.44 -pin {{cfg_addr_in[0]} {cfg_addr_in[1]} {cfg_addr_in[2]} {cfg_addr_in[3]} {cfg_addr_in[4]} {cfg_addr_in[5]} {cfg_addr_in[6]} {cfg_data_in[0]} {cfg_data_in[1]} {cfg_data_in[2]} {cfg_data_in[3]} {cfg_data_in[4]} {cfg_data_in[5]} {cfg_data_in[6]} {cfg_data_in[7]} {cfg_data_in[8]} {cfg_data_in[9]} {cfg_data_in[10]} {cfg_data_in[11]} {cfg_data_in[12]} {cfg_data_in[13]} {cfg_data_in[14]} {cfg_data_in[15]} {cfg_data_in[16]} {cfg_data_in[17]} {cfg_data_in[18]} {cfg_data_in[19]} {cfg_data_in[20]} {cfg_data_in[21]} {cfg_data_in[22]} {cfg_data_in[23]} {cfg_data_in[24]} {cfg_data_in[25]} {cfg_data_in[26]} {cfg_data_in[27]} {cfg_data_in[28]} {cfg_data_in[29]} {cfg_data_in[30]} {cfg_data_in[31]} {cfg_data_in[32]} {cfg_data_in[33]} cfg_we_in}
+
+# LEFT operand_in_l, operand_out_l:
+editPin -side Left -pinDepth 0.39 -fixedPin 1 -fixOverlap 1 -layer 6 -spreadType start -spacing 0.84 -start 0.0 161.28 -pin {operand_in_l[0] operand_out_l[0] operand_in_l[1] operand_out_l[1] operand_in_l[2] operand_out_l[2] operand_in_l[3] operand_out_l[3] operand_in_l[4] operand_out_l[4] operand_in_l[5] operand_out_l[5] operand_in_l[6] operand_out_l[6] operand_in_l[7] operand_out_l[7] operand_in_l[8] operand_out_l[8] operand_in_l[9] operand_out_l[9] operand_in_l[10] operand_out_l[10] operand_in_l[11] operand_out_l[11] operand_in_l[12] operand_out_l[12] operand_in_l[13] operand_out_l[13] operand_in_l[14] operand_out_l[14] operand_in_l[15] operand_out_l[15] operand_in_l[16] operand_out_l[16] operand_in_l[17] operand_out_l[17] operand_in_l[18] operand_out_l[18] operand_in_l[19] operand_out_l[19] operand_in_l[20] operand_out_l[20] operand_in_l[21] operand_out_l[21] operand_in_l[22] operand_out_l[22] operand_in_l[23] operand_out_l[23] operand_in_l[24] operand_out_l[24] operand_in_l[25] operand_out_l[25] operand_in_l[26] operand_out_l[26] operand_in_l[27] operand_out_l[27] operand_in_l[28] operand_out_l[28] operand_in_l[29] operand_out_l[29] operand_in_l[30] operand_out_l[30] operand_in_l[31] operand_out_l[31]}
+
+# TOP operand_in_t, operand_out_t:
+editPin -side Top -pinDepth 0.39 -fixedPin 1 -fixOverlap 1 -layer 5 -spreadType start -spacing 2.1 -start 93.52 223.44 -pin {operand_in_t[0] operand_out_t[0] operand_in_t[1] operand_out_t[1] operand_in_t[2] operand_out_t[2] operand_in_t[3] operand_out_t[3] operand_in_t[4] operand_out_t[4] operand_in_t[5] operand_out_t[5] operand_in_t[6] operand_out_t[6] operand_in_t[7] operand_out_t[7] operand_in_t[8] operand_out_t[8] operand_in_t[9] operand_out_t[9] operand_in_t[10] operand_out_t[10] operand_in_t[11] operand_out_t[11] operand_in_t[12] operand_out_t[12] operand_in_t[13] operand_out_t[13] operand_in_t[14] operand_out_t[14] operand_in_t[15] operand_out_t[15] operand_in_t[16] operand_out_t[16] operand_in_t[17] operand_out_t[17] operand_in_t[18] operand_out_t[18] operand_in_t[19] operand_out_t[19] operand_in_t[20] operand_out_t[20] operand_in_t[21] operand_out_t[21] operand_in_t[22] operand_out_t[22] operand_in_t[23] operand_out_t[23] operand_in_t[24] operand_out_t[24] operand_in_t[25] operand_out_t[25] operand_in_t[26] operand_out_t[26] operand_in_t[27] operand_out_t[27] operand_in_t[28] operand_out_t[28] operand_in_t[29] operand_out_t[29] operand_in_t[30] operand_out_t[30] operand_in_t[31] operand_out_t[31]}
+
+# RIGHT operand_in_r, operand_out_r:
+editPin -side Right -pinDepth 0.39 -fixedPin 1 -fixOverlap 1 -layer 6 -spreadType start -spacing 0.84 -start 238.44 161.28 -pin {operand_out_r[0] operand_in_r[0] operand_out_r[1] operand_in_r[1] operand_out_r[2] operand_in_r[2] operand_out_r[3] operand_in_r[3] operand_out_r[4] operand_in_r[4] operand_out_r[5] operand_in_r[5] operand_out_r[6] operand_in_r[6] operand_out_r[7] operand_in_r[7] operand_out_r[8] operand_in_r[8] operand_out_r[9] operand_in_r[9] operand_out_r[10] operand_in_r[10] operand_out_r[11] operand_in_r[11] operand_out_r[12] operand_in_r[12] operand_out_r[13] operand_in_r[13] operand_out_r[14] operand_in_r[14] operand_out_r[15] operand_in_r[15] operand_out_r[16] operand_in_r[16] operand_out_r[17] operand_in_r[17] operand_out_r[18] operand_in_r[18] operand_out_r[19] operand_in_r[19] operand_out_r[20] operand_in_r[20] operand_out_r[21] operand_in_r[21] operand_out_r[22] operand_in_r[22] operand_out_r[23] operand_in_r[23] operand_out_r[24] operand_in_r[24] operand_out_r[25] operand_in_r[25] operand_out_r[26] operand_in_r[26] operand_out_r[27] operand_in_r[27] operand_out_r[28] operand_in_r[28] operand_out_r[29] operand_in_r[29] operand_out_r[30] operand_in_r[30] operand_out_r[31] operand_in_r[31]}
+
+# BOTTOM operand_in_b, operand_out_b:
+editPin -side Bottom -pinDepth 0.39 -fixedPin 1 -fixOverlap 1 -layer 5 -spreadType start -spacing 2.1 -start 93.52 0.0 -pin {operand_out_b[0] operand_in_b[0] operand_out_b[1] operand_in_b[1] operand_out_b[2] operand_in_b[2] operand_out_b[3] operand_in_b[3] operand_out_b[4] operand_in_b[4] operand_out_b[5] operand_in_b[5] operand_out_b[6] operand_in_b[6] operand_out_b[7] operand_in_b[7] operand_out_b[8] operand_in_b[8] operand_out_b[9] operand_in_b[9] operand_out_b[10] operand_in_b[10] operand_out_b[11] operand_in_b[11] operand_out_b[12] operand_in_b[12] operand_out_b[13] operand_in_b[13] operand_out_b[14] operand_in_b[14] operand_out_b[15] operand_in_b[15] operand_out_b[16] operand_in_b[16] operand_out_b[17] operand_in_b[17] operand_out_b[18] operand_in_b[18] operand_out_b[19] operand_in_b[19] operand_out_b[20] operand_in_b[20] operand_out_b[21] operand_in_b[21] operand_out_b[22] operand_in_b[22] operand_out_b[23] operand_in_b[23] operand_out_b[24] operand_in_b[24] operand_out_b[25] operand_in_b[25] operand_out_b[26] operand_in_b[26] operand_out_b[27] operand_in_b[27] operand_out_b[28] operand_in_b[28] operand_out_b[29] operand_in_b[29] operand_out_b[30] operand_in_b[30] operand_out_b[31] operand_in_b[31]}
+
+# global_bus_in, data_bus_out:
+editPin -side Top -pinDepth 0.39 -fixedPin 1 -fixOverlap 1 -layer 7 -spreadType start -spacing 2.1 -start 94.5 223.44 -pin {global_bus_in[0] data_bus_out[0] global_bus_in[1] data_bus_out[1] global_bus_in[2] data_bus_out[2] global_bus_in[3] data_bus_out[3] global_bus_in[4] data_bus_out[4] global_bus_in[5] data_bus_out[5] global_bus_in[6] data_bus_out[6] global_bus_in[7] data_bus_out[7] global_bus_in[8] data_bus_out[8] global_bus_in[9] data_bus_out[9] global_bus_in[10] data_bus_out[10] global_bus_in[11] data_bus_out[11] global_bus_in[12] data_bus_out[12] global_bus_in[13] data_bus_out[13] global_bus_in[14] data_bus_out[14] global_bus_in[15] data_bus_out[15] global_bus_in[16] data_bus_out[16] global_bus_in[17] data_bus_out[17] global_bus_in[18] data_bus_out[18] global_bus_in[19] data_bus_out[19] global_bus_in[20] data_bus_out[20] global_bus_in[21] data_bus_out[21] global_bus_in[22] data_bus_out[22] global_bus_in[23] data_bus_out[23] global_bus_in[24] data_bus_out[24] global_bus_in[25] data_bus_out[25] global_bus_in[26] data_bus_out[26] global_bus_in[27] data_bus_out[27] global_bus_in[28] data_bus_out[28] global_bus_in[29] data_bus_out[29] global_bus_in[30] data_bus_out[30] global_bus_in[31] data_bus_out[31]}
+
+# cache_data_out, cache_data_in, cache_addr_out, cache_we_out, cache_re_out:
+editPin -side Bottom -pinDepth 0.39 -fixedPin 1 -fixOverlap 1 -layer 7 -spreadType start -spacing 1.68 -start 94.36 0.0 -pin {cache_data_out[0] cache_data_in[0] cache_addr_out[0] cache_data_out[1] cache_data_in[1] cache_addr_out[1] cache_data_out[2] cache_data_in[2] cache_addr_out[2] cache_data_out[3] cache_data_in[3] cache_addr_out[3] cache_data_out[4] cache_data_in[4] cache_addr_out[4] cache_data_out[5] cache_data_in[5] cache_addr_out[5] cache_data_out[6] cache_data_in[6] cache_addr_out[6] cache_data_out[7] cache_data_in[7] cache_addr_out[7] cache_data_out[8] cache_data_in[8] cache_addr_out[8] cache_data_out[9] cache_data_in[9] cache_addr_out[9] cache_data_out[10] cache_data_in[10] cache_addr_out[10] cache_data_out[11] cache_data_in[11] cache_addr_out[11] cache_data_out[12] cache_data_in[12] cache_addr_out[12] cache_data_out[13] cache_data_in[13] cache_data_out[14] cache_data_in[14] cache_data_out[15] cache_data_in[15] cache_data_out[16] cache_data_in[16] cache_data_out[17] cache_data_in[17] cache_data_out[18] cache_data_in[18] cache_data_out[19] cache_data_in[19] cache_data_out[20] cache_data_in[20] cache_data_out[21] cache_data_in[21] cache_data_out[22] cache_data_in[22] cache_data_out[23] cache_data_in[23] cache_data_out[24] cache_data_in[24] cache_data_out[25] cache_data_in[25] cache_data_out[26] cache_data_in[26] cache_data_out[27] cache_data_in[27] cache_data_out[28] cache_data_in[28] cache_data_out[29] cache_data_in[29] cache_data_out[30] cache_data_in[30] cache_data_out[31] cache_data_in[31] cache_we_out cache_re_out}
+
+# Postprocessing:
+fixVia -minCut
+fillNotch

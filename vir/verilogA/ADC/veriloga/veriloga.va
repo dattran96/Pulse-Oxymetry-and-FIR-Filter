@@ -1,0 +1,40 @@
+// VerilogA for verilogA, ADC, veriloga
+
+//----- Pipelined ADC-----//
+`include "discipline.h"
+`include "constants.h"
+module ADC (in, out, clk);
+	parameter integer bit = 8;		// ADC resolution
+	parameter real fullscale = 1.8,	//supply voltage
+	vth = 0.9,						//threshold
+	dly = 10n,						// transition delay
+	ttime = 1n;						// transition rising time
+	input in;						// input analog voltage
+	input clk;						// input clock
+	output [7:0] out;			// digital vector output
+	electrical in, clk;
+	electrical [7:0] out;
+	real sample;
+	integer result[7:0];		// integer array
+	genvar i;						// index loop
+	analog begin
+		@(cross(V(clk) - vth, +1) ) begin
+			sample = V(in);
+			for (i = bit - 1; i >= 0; i = i -1) begin
+				if( sample>vth ) begin
+					result[i] = 1.8;
+					sample = sample - vth;
+				end else begin
+					result[i] = 0.0;
+				end
+			sample = 2.0 * sample;
+			end
+		end
+	
+
+		for (i = 0; i < bit; i = i + 1 ) begin
+			V(out[i]) <+ transition(result[i], dly, ttime);
+		end
+	end
+endmodule
+

@@ -1,0 +1,3 @@
+set_global timing_extract_model_slew_propagation_mode worst_slew
+do_extract_model output/PE_top.lib -lib_name PE_top -cell_name PE_top -tolerance 0.0 -verilog_shell_file PE_top.v -verilog_shell_module PE_top
+write_model_timing -type arc PE_top.rpt

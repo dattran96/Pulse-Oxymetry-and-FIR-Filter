@@ -1,0 +1,7 @@
+source "script/01-setup_tech.tcl"
+source "script/02-load_design.tcl"
+source "script/03-analyze.tcl"
+source "script/04-elaborate.tcl"
+source "script/05-constrain.tcl"
+source "script/06-compile.tcl"
+source "script/07-report.tcl"

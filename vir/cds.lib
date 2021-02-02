@@ -1,0 +1,15 @@
+DEFINE cdsDefTechLib $CDS_INST_DIR/tools/dfII/etc/cdsDefTechLib 
+DEFINE basic $CDS_INST_DIR/tools/dfII/etc/cdslib/basic 
+DEFINE analogLib $CDS_INST_DIR/tools/dfII/etc/cdslib/artist/analogLib
+DEFINE umc65ll $UMC_FDK_DIR/umc65ll
+DEFINE UMK65LSCLLMVBBH /cad/synopsys/libs/UMC_65_LL/oa/uk65lscllmvbbh
+DEFINE UMK65LSCLLMVBBL /cad/synopsys/libs/UMC_65_LL/oa/uk65lscllmvbbl
+DEFINE UMK65LSCLLMVBBR /cad/synopsys/libs/UMC_65_LL/oa/uk65lscllmvbbr
+DEFINE UM065GIOLL25MVIR /cad/synopsys/libs/UMC_65_LL/oa/um065gioll25mvir
+DEFINE avTech /cad/cds03/cadence/2015-16/RHELx86/ASSURA_04.14.124_IC616OA/tools/assura/etc/avtech/avTech
+DEFINE connectLib /cad/cds03/cadence/2015-16/RHELx86/INCISIVE_15.10.002/tools/affirma_ams/etc/connect_lib/connectLib
+DEFINE Verilog#2dA Verilog#2dA
+DEFINE frontend frontend
+DEFINE verilogA verilogA
+#Removed by ddDeleteObj: DEFINE HDL_Lab_10 /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/HDL_Lab_10
+DEFINE HDL_Lab_10 /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/HDL_Lab_10

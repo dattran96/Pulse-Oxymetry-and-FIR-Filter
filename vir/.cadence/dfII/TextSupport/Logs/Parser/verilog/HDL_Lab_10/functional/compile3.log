@@ -1,0 +1,31 @@
+ncvlog(64): 15.10-s002: (c) Copyright 1995-2015 Cadence Design Systems, Inc.
+DEFINE cdsDefTechLib $CDS_INST_DIR/tools/dfII/etc/cdsDefTechLib 
+|
+ncvlog: *W,DLCPTH (./cds.lib,1): cds.lib Invalid path '/cadstud/cds03/cadence/2015-16/RHELx86/INCISIVE_15.10.002/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE basic $CDS_INST_DIR/tools/dfII/etc/cdslib/basic 
+|
+ncvlog: *W,DLCPTH (./cds.lib,2): cds.lib Invalid path '/cadstud/cds03/cadence/2015-16/RHELx86/INCISIVE_15.10.002/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE analogLib $CDS_INST_DIR/tools/dfII/etc/cdslib/artist/analogLib
+|
+ncvlog: *W,DLCPTH (./cds.lib,3): cds.lib Invalid path '/cadstud/cds03/cadence/2015-16/RHELx86/INCISIVE_15.10.002/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+TOOL:	ncvlog(64)	15.10-s002: Started on Aug 02, 2020 at 16:35:32 CEST
+ncvlog
+    -use5x
+    -SPECIFICUNIT IV_2
+    -zparse /tmp/vamsZparw56333
+    -NOWARN DLNOHV
+    -work HDL_Lab_10
+    -view functional
+    -nostdout
+    -logfile /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/.cadence/dfII/TextSupport/Logs/Parser/verilog/HDL_Lab_10/functional/compile3.log
+    -messages
+    -cdslib /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/cds.lib
+    /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/HDL_Lab_10/IV_2/functional/verilog.v
+
+file: /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/HDL_Lab_10/IV_2/functional/verilog.v
+	module HDL_Lab_10.IV_2:functional
+		errors: 0, warnings: 0
+	 writing out DPL output:
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 3
+TOOL:	ncvlog(64)	15.10-s002: Exiting on Aug 02, 2020 at 16:35:32 CEST  (total: 00:00:00)

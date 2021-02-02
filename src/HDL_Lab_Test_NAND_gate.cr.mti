@@ -1,0 +1,8 @@
+/home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/NAND_Gate.v {1 {vlog -work work -vopt -stats=none /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/NAND_Gate.v
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+-- Compiling module NAND_Gate
+
+Top level modules:
+	NAND_Gate
+
+} {} {}}

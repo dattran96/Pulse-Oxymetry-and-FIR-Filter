@@ -1,0 +1,79 @@
+`timescale 1ms/1us
+module Controller_Dat(ADC,clk,LED_Drive,DC_Comp,LED_IR,LED_RED,PGA_Gain,RED_ADC_Value);
+	
+	output reg [3:0] LED_Drive;
+	output reg [6:0] DC_Comp;
+	output reg LED_IR;
+	output reg LED_RED;
+	output reg [3:0] PGA_Gain;
+	//output reg CLK_Filter;
+	//output reg [7:0] IR_ADC_Value;
+	output reg [7:0] RED_ADC_Value;
+
+	input [7:0] ADC;
+	//input Find_Setting;
+	input clk;
+	//input rst_n;
+	
+	//RED OP searching
+	reg found_RED_OP;
+	reg [6:0] RED_OP;
+
+	//RED Gain searching
+	reg RED_Gain;
+	reg RED_search_Gain;
+	reg [7:0] previous_ADC;
+	reg wait_for_react;
+
+	//Offset voltage compare to 0.9
+	reg [7:0] V_offset;
+	reg [3:0] acceptable_offset;
+	initial begin
+		LED_Drive = 10;
+		DC_Comp = 0; // DC_Comp = 0
+		LED_IR = 0;	//Turn OFF IN_RED
+		LED_RED = 1 ; //Turn ON RED_LED
+		PGA_Gain = 0; // GAIN = 0
+		found_RED_OP = 0;
+		V_offset = 0;
+		acceptable_offset = 10;
+		wait_for_react=0;
+		//CLK_Filter = 0;
+		//IR_ADC_Value = 0;
+	end
+	always@(posedge clk or negedge clk) begin
+		if( ADC > 127 & found_RED_OP== 0)
+			begin
+			DC_Comp = DC_Comp +1;
+			V_offset = ADC- 127;
+			end
+		else if (ADC < 127 & found_RED_OP == 0)
+			begin
+			DC_Comp = DC_Comp- 1;
+			V_offset = 127-ADC;
+			RED_ADC_Value = ADC;			
+			end
+		//Stop searching, save for RED-LED DC point 
+		if(V_offset<= acceptable_offset & found_RED_OP==0)
+			begin
+			RED_OP = DC_Comp;
+			found_RED_OP = 1;
+			RED_search_Gain = 1;
+		 	end
+		//Search for RED-gain
+		if(RED_search_Gain == 1 & ADC < 230 & ADC > 30) 
+			begin
+			PGA_Gain = PGA_Gain + 1;
+			end
+		//stop searching, store RED-Gain
+		if (ADC > 230 | ADC < 30)
+			begin
+			RED_search_Gain = 0;
+			RED_Gain = PGA_Gain;
+			end
+	end	
+	
+	
+	
+	
+endmodule

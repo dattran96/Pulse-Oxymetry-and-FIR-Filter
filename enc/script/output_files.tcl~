@@ -1,0 +1,13 @@
+#################################
+# OUTPUT FILES
+#################################
+
+# Write LEF file:
+lefOut output/${TOP_LEVEL_MODULE}.lef
+
+# Write .lib file (takes a lot of time):
+set_global timing_extract_model_slew_propagation_mode worst_slew
+do_extract_model output/${TOP_LEVEL_MODULE}.lib -lib_name ${TOP_LEVEL_MODULE} -cell_name ${TOP_LEVEL_MODULE} -tolerance 0.0 -verilog_shell_file output/${TOP_LEVEL_MODULE}.v -verilog_shell_module ${TOP_LEVEL_MODULE}
+
+# Write Timing Model report (takes a lot of time):
+#write_model_timing -type arc ${TOP_LEVEL_MODULE}.rpt

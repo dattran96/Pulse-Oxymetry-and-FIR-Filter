@@ -1,0 +1,24 @@
+set PROJECT_PATH	"/home/nicoa/Projekte/CGRA_40nm/PE_V1"
+set REP_PATH		"/home/nicoa/Projekte/CGRA_40nm/PE_V1/syn/log"
+set TOP_LEVEL_MODULE	"PE_top"
+
+saif_map -start
+
+sh vcd2saif -i ${PROJECT_PATH}/src/vcd/activity.vcd -o ${PROJECT_PATH}/src/vcd/${TOP_LEVEL_MODULE}.saif
+
+# read netlist:
+#read_file -format verilog ${PROJECT_PATH}/syn/netlist/${TOP_LEVEL_MODULE}_gl.v
+
+# elaborate:
+#elaborate ${TOP_LEVEL_MODULE} -architecture verilog -lib WORK
+
+# constrain design:
+#source script/constrain.tcl
+
+read_ddc ${PROJECT_PATH}/syn/mapped/${TOP_LEVEL_MODULE}.ddc
+
+# read activity file:
+read_saif -input ${PROJECT_PATH}/src/vcd/${TOP_LEVEL_MODULE}.saif -instance_name ${TOP_LEVEL_MODULE}_tb/${TOP_LEVEL_MODULE}_i -auto_map_names -verbose
+
+# report power consumption:
+report_power -analysis_effort high

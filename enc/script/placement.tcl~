@@ -1,0 +1,24 @@
+# Place Standard cells:
+setPlaceMode -fp false
+setPlaceMode -congEffort auto -timingDriven 0 -modulePlan 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 1 -placeIOPins 1 -moduleAwareSpare 0 -checkPinLayerForAccess {  {1 2 3 4 5 6 7} } -maxRouteLayer 7 -preserveRouting 0 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+placeDesign -prePlaceOpt
+
+# Set Leakage Power optimization mode (low = priority to speed optimization, high = optimize for speed and leakage):
+setOptMode -leakagePowerEffort low
+
+# Add Tie-Hi/Lo Cells:
+deleteTieHiLo -cell {TIELBWP12T TIEHBWP12T}
+setTieHiLoMode -reset
+setTieHiLoMode -maxFanout 12 -maxDistance 200 -cell {TIELBWP12T TIEHBWP12T}
+addTieHiLo -cell {TIELBWP12T TIEHBWP12T}
+
+# Optimize Design:
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+# fix DRV:
+optDesign -preCTS -drv
+# fix Timing:
+optDesign -preCTS -outDir reports/timing
+fit
+
+# Save the Design:
+saveDesign designs/PE_top_sc_opt_placed.enc

@@ -1,0 +1,188 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Tue Mar 17 07:18:00 2020 
+Best design point: 1
+Design specs: 
+	frontend:led_drive_tb:1	corner	Corner_0 - 
+	IIRFW		-5.445m
+	IPD		1.289u
+	IREDFW		5.445m
+	V_LED		1.33	Yes
+	frontend:led_drive_tb:1	corner	Corner_1 - 
+	IIRFW		-4.379m
+	IPD		988.6n
+	IREDFW		4.379m
+	V_LED		1.31	Yes
+	frontend:led_drive_tb:1	corner	Corner_2 - 
+	IIRFW		-5.486m
+	IPD		1.3u
+	IREDFW		5.486m
+	V_LED		1.771	No
+	frontend:led_drive_tb:1	corner	Corner_3 - 
+	IIRFW		-4.421m
+	IPD		1.005u
+	IREDFW		4.421m
+	V_LED		1.751	No
+	frontend:led_drive_tb:1	corner	Corner_4 - 
+	frontend:led_drive_tb:1	corner	Corner_5 - 
+	frontend:led_drive_tb:1	corner	Corner_6 - 
+	frontend:led_drive_tb:1	corner	Corner_7 - 
+	frontend:led_drive_tb:1	corner	Corner_8 - 
+	IIRFW		-7.547m
+	IPD		1.836u
+	IREDFW		7.547m
+	V_LED		1.324	Yes
+	frontend:led_drive_tb:1	corner	Corner_9 - 
+	IIRFW		-6.077m
+	IPD		1.454u
+	IREDFW		6.077m
+	V_LED		1.299	Yes
+	frontend:led_drive_tb:1	corner	Corner_10 - 
+	IIRFW		-7.608m
+	IPD		1.852u
+	IREDFW		7.608m
+	V_LED		1.75	No
+	frontend:led_drive_tb:1	corner	Corner_11 - 
+	IIRFW		-6.151m
+	IPD		1.473u
+	IREDFW		6.151m
+	V_LED		1.727	No
+	frontend:led_drive_tb:1	corner	Corner_12 - 
+	IIRFW		-6.932m
+	IPD		1.675u
+	IREDFW		6.932m
+	V_LED		1.258	Yes
+	frontend:led_drive_tb:1	corner	Corner_13 - 
+	IIRFW		-5.577m
+	IPD		1.324u
+	IREDFW		5.577m
+	V_LED		1.235	Yes
+	frontend:led_drive_tb:1	corner	Corner_14 - 
+	IIRFW		-6.997m
+	IPD		1.692u
+	IREDFW		6.997m
+	V_LED		1.722	No
+	frontend:led_drive_tb:1	corner	Corner_15 - 
+	IIRFW		-5.657m
+	IPD		1.345u
+	IREDFW		5.657m
+	V_LED		1.698	No
+	frontend:led_drive_tb:1	corner	Corner_16 - 
+	IIRFW		-5.971m
+	IPD		1.426u
+	IREDFW		5.971m
+	V_LED		1.379	Yes
+	frontend:led_drive_tb:1	corner	Corner_17 - 
+	IIRFW		-4.81m
+	IPD		1.117u
+	IREDFW		4.81m
+	V_LED		1.358	Yes
+	frontend:led_drive_tb:1	corner	Corner_18 - 
+	IIRFW		-6.011m
+	IPD		1.437u
+	IREDFW		6.011m
+	V_LED		1.792	No
+	frontend:led_drive_tb:1	corner	Corner_19 - 
+	IIRFW		-4.852m
+	IPD		1.128u
+	IREDFW		4.852m
+	V_LED		1.774	No
+	frontend:led_drive_tb:1	corner	Corner_20 - 
+	IIRFW		-5.259m
+	IPD		1.242u
+	IREDFW		5.259m
+	V_LED		1.343	Yes
+	frontend:led_drive_tb:1	corner	Corner_21 - 
+	IIRFW		-4.228m
+	IPD		939.3n
+	IREDFW		4.228m
+	V_LED		1.324	Yes
+	frontend:led_drive_tb:1	corner	Corner_22 - 
+	IIRFW		-5.296m
+	IPD		1.252u
+	IREDFW		5.296m
+	V_LED		1.779	No
+	frontend:led_drive_tb:1	corner	Corner_23 - 
+	IIRFW		-4.267m
+	IPD		949.6n
+	IREDFW		4.267m
+	V_LED		1.76	No
+	frontend:led_drive_tb:1	corner	Corner_24 - 
+	frontend:led_drive_tb:1	corner	Corner_25 - 
+	frontend:led_drive_tb:1	corner	Corner_26 - 
+	frontend:led_drive_tb:1	corner	Corner_27 - 
+	frontend:led_drive_tb:1	corner	Corner_28 - 
+	IIRFW		-7.298m
+	IPD		1.771u
+	IREDFW		7.298m
+	V_LED		1.336	Yes
+	frontend:led_drive_tb:1	corner	Corner_29 - 
+	IIRFW		-5.874m
+	IPD		1.401u
+	IREDFW		5.874m
+	V_LED		1.312	Yes
+	frontend:led_drive_tb:1	corner	Corner_30 - 
+	IIRFW		-7.354m
+	IPD		1.785u
+	IREDFW		7.354m
+	V_LED		1.758	No
+	frontend:led_drive_tb:1	corner	Corner_31 - 
+	IIRFW		-5.941m
+	IPD		1.419u
+	IREDFW		5.941m
+	V_LED		1.737	No
+	frontend:led_drive_tb:1	corner	Corner_32 - 
+	IIRFW		-6.702m
+	IPD		1.616u
+	IREDFW		6.702m
+	V_LED		1.276	Yes
+	frontend:led_drive_tb:1	corner	Corner_33 - 
+	IIRFW		-5.392m
+	IPD		1.276u
+	IREDFW		5.392m
+	V_LED		1.252	Yes
+	frontend:led_drive_tb:1	corner	Corner_34 - 
+	IIRFW		-6.76m
+	IPD		1.631u
+	IREDFW		6.76m
+	V_LED		1.733	No
+	frontend:led_drive_tb:1	corner	Corner_35 - 
+	IIRFW		-5.462m
+	IPD		1.294u
+	IREDFW		5.462m
+	V_LED		1.709	No
+	frontend:led_drive_tb:1	corner	Corner_36 - 
+	IIRFW		-5.768m
+	IPD		1.374u
+	IREDFW		5.768m
+	V_LED		1.389	Yes
+	frontend:led_drive_tb:1	corner	Corner_37 - 
+	IIRFW		-4.645m
+	IPD		1.079u
+	IREDFW		4.645m
+	V_LED		1.368	Yes
+	frontend:led_drive_tb:1	corner	Corner_38 - 
+	IIRFW		-5.805m
+	IPD		1.383u
+	IREDFW		5.805m
+	V_LED		1.8	No
+	frontend:led_drive_tb:1	corner	Corner_39 - 
+	IIRFW		-4.684m
+	IPD		1.088u
+	IREDFW		4.684m
+	V_LED		1.782	No
+Design parameters: 
+	S0		1.8
+	S1		1.8
+	S2		1.8
+	S3		1.8
+	S4		1.8
+	S5		0
+	vdd		1.62
+	vss		0
+
+Interactive.1
+Number of points completed: 1
+Number of simulation errors: 8
+Interactive.1 completed. 
+Current time: Tue Mar 17 07:19:13 2020 

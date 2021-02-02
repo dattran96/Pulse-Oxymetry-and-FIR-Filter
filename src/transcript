@@ -1,0 +1,2966 @@
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading project HDL_LAB_PROJECT
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -vopt work.Controller_StateMachine_tb -voptargs=+acc
+# vsim -vopt work.Controller_StateMachine_tb -voptargs="+acc" 
+# Start time: 20:35:55 on Aug 06,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/FIR_Filter_IR/Out_Filtered
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/FIR_Filter_IR/ADC_Value
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# unknown option "-rowmargin"
+# unknown option "-rowmargin"
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Causality operation skipped due to absence of debug database file
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/FIR_Filter_IR/temp_Pointer
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/FIR_Filter_IR/coeff_Pointer
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/FIR_Filter_IR/temp_Pointer
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/FIR_Filter_IR/nxt_Pointer
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint /Controller_StateMachine_tb/dut1/FIR_Filter_IR/CLK_Filter
+add wave -position insertpoint /Controller_StateMachine_tb/dut1/clk
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/FIR_Filter_IR/product
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Controller_StateMachine(fast)".
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/RED_ADC_Value
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/currentState
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/DC_Comp_wait_time
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/DC_Comp
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Break key hit
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v failed with 4 errors.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 1 failed with 4 errors.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v failed with 4 errors.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 1 failed with 4 errors.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+quit -sim
+# End time: 10:24:40 on Aug 07,2020, Elapsed time: 13:48:45
+# Errors: 2, Warnings: 1
+vsim -vopt -voptargs=+acc work.Controller_StateMachine_tb
+# vsim -vopt -voptargs="+acc" work.Controller_StateMachine_tb 
+# Start time: 10:24:49 on Aug 07,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Controller_StateMachine(fast)".
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/RED_ADC_Value
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Out_RED_Filtered
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/currentState
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/Min_Max_Wait_Counter
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/DC_Comp
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/ADC
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/Min_Max_Found
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/V_min_1s
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/V_max_1s
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Controller_StateMachine(fast)".
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/V_offset
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Controller_StateMachine(fast)".
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Controller_StateMachine(fast)".
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+quit -sim
+# End time: 11:07:45 on Aug 07,2020, Elapsed time: 0:42:56
+# Errors: 0, Warnings: 0
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -vopt -voptargs=+acc work.Controller_StateMachine_tb
+# vsim -vopt -voptargs="+acc" work.Controller_StateMachine_tb 
+# Start time: 11:08:02 on Aug 07,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Controller_StateMachine(fast)".
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/RED_ADC_Value
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/RED_ADC_Value
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Out_RED_Filtered
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+quit -sim
+# End time: 11:17:36 on Aug 07,2020, Elapsed time: 0:09:34
+# Errors: 0, Warnings: 0
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -vopt -voptargs=+acc work.Controller_StateMachine_tb
+# vsim -vopt -voptargs="+acc" work.Controller_StateMachine_tb 
+# Start time: 11:17:55 on Aug 07,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Controller_StateMachine(fast)".
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/RED_ADC_Value
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Out_RED_Filtered
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/IR_ADC_Value
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/currentState
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/RED_OP
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/DC_Comp
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/V_offset
+# Break key hit
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+run -all
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v failed with 4 errors.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 1 failed with 4 errors.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# 12 compiles, 0 failed with no errors.
+# Break key hit
+# Simulation stop requested.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Controller_StateMachine(fast)".
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_2.v was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_2.v was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Controller_StateMachine(fast)".
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/DC_Middle
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Out_IR_Filtered
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/V_min_1s
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/V_max_1s
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/Min_Max_Wait_Counter
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_2.v was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Out_RED_Filtered
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_2.v was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# 15 compiles, 0 failed with no errors.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# 15 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# 15 compiles, 0 failed with no errors.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# 15 compiles, 0 failed with no errors.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# 15 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+quit -sim
+# End time: 16:55:25 on Aug 07,2020, Elapsed time: 5:37:30
+# Errors: 0, Warnings: 0
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+# Break key hit
+# Break key hit
+restart -f
+# No Design Loaded!
+vsim -vopt -voptargs=+acc work.Controller_StateMachine_tb
+# vsim -vopt -voptargs="+acc" work.Controller_StateMachine_tb 
+# Start time: 16:57:16 on Aug 07,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/IR_ADC_Value
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Out_IR_Filtered
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+quit -sim
+# End time: 17:10:16 on Aug 07,2020, Elapsed time: 0:13:00
+# Errors: 0, Warnings: 0
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+vsim -vopt -voptargs=+acc work.Controller_StateMachine_tb
+# vsim -vopt -voptargs="+acc" work.Controller_StateMachine_tb 
+# Start time: 17:12:24 on Aug 07,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/RED_ADC_Value
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Out_RED_Filtered
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+run -all
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+# Break key hit
+# Simulation stop requested.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Controller_StateMachine(fast)".
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/currentState
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/Min_Max_Wait_Counter
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/V_offset
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Controller_StateMachine(fast)".
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Controller_StateMachine(fast)".
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v failed with 1 errors.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 1 failed with 1 error.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v failed with 1 errors.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 1 failed with 1 error.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Controller_StateMachine(fast)".
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Controller_StateMachine(fast)".
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Controller_StateMachine(fast)".
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint /Controller_StateMachine_tb/dut1/Controller/V_offset
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/Min_Max_Wait_Counter
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/DC_Middle
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Controller/DC_Comp
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+run -all
+# Break key hit
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 56
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Controller_StateMachine(fast)".
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Controller_StateMachine(fast)".
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v failed with 1 errors.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 1 failed with 1 error.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v failed with 1 errors.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 1 failed with 1 error.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+quit -sim
+# End time: 18:45:23 on Aug 07,2020, Elapsed time: 1:32:59
+# Errors: 0, Warnings: 0
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+# Break key hit
+vsim -vopt -voptargs=+acc work.Controller_StateMachine_tb
+# vsim -vopt -voptargs="+acc" work.Controller_StateMachine_tb 
+# Start time: 18:46:40 on Aug 07,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/IR_ADC_Value
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Out_IR_Filtered
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Error (suppressible): /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Top_Module_Controller_and_FIR.v(41): (vopt-2912) Port 'fast_clk' not found in module 'FIR_Filter_Optimized' (3rd connection).
+# ** Error (suppressible): /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Top_Module_Controller_and_FIR.v(50): (vopt-2912) Port 'fast_clk' not found in module 'FIR_Filter_Optimized' (3rd connection).
+# Optimization failed
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# No Design Loaded!
+vsim -vopt -voptargs=+acc work.Controller_StateMachine_tb
+# vsim -vopt -voptargs="+acc" work.Controller_StateMachine_tb 
+# Start time: 18:46:40 on Aug 07,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Controller_StateMachine(fast)".
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Out_IR_Filtered
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/IR_ADC_Value
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/ADC
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(30): (vopt-2685) [TFMPC] - Too few port connections for 'dut1'.  Expected 12, found 11.
+# ** Warning: /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'fast_clk'.
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Out_RED_Filtered
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+run -all
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+# Break key hit
+# Simulation stop requested.
+vsim -vopt -voptargs=+acc work.Controller_StateMachine_tb
+# End time: 19:26:18 on Aug 07,2020, Elapsed time: 0:39:38
+# Errors: 0, Warnings: 0
+# vsim -vopt -voptargs="+acc" work.Controller_StateMachine_tb 
+# Start time: 19:26:18 on Aug 07,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/RED_ADC_Value
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Out_RED_Filtered
+run
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(49)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 49
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Out_IR_Filtered
+add wave -position insertpoint /Controller_StateMachine_tb/dut1/IR_ADC_Value
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(49)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 49
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(49)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 49
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(49)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 49
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v failed with 3 errors.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 1 failed with 3 errors.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(49)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 49
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(49)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 49
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v failed with 2 errors.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 1 failed with 2 errors.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v failed with 1 errors.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v failed with 2 errors.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 2 failed with 3 errors.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v failed with 1 errors.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 1 failed with 1 error.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(49)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 49
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(49)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 49
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v failed with 3 errors.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 1 failed with 3 errors.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v failed with 2 errors.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 1 failed with 2 errors.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(49)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 49
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v failed with 3 errors.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 1 failed with 3 errors.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v failed with 2 errors.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 1 failed with 2 errors.
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(49)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 49
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Error (suppressible): /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Top_Module_Controller_and_FIR.v(41): (vopt-2912) Port 'fast_clk' not found in module 'FIR_Filter_Optimized' (2nd connection).
+# ** Error (suppressible): /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Top_Module_Controller_and_FIR.v(50): (vopt-2912) Port 'fast_clk' not found in module 'FIR_Filter_Optimized' (2nd connection).
+# Optimization failed
+# Break key hit
+restart -f
+# No Design Loaded!
+vsim -vopt -voptargs=+acc work.Controller_StateMachine_tb
+# vsim -vopt -voptargs="+acc" work.Controller_StateMachine_tb 
+# Start time: 19:26:18 on Aug 07,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Top_Module_Controller_and_FIR.v(41): (vopt-2912) Port 'fast_clk' not found in module 'FIR_Filter_Optimized' (2nd connection).
+# ** Error (suppressible): /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Top_Module_Controller_and_FIR.v(50): (vopt-2912) Port 'fast_clk' not found in module 'FIR_Filter_Optimized' (2nd connection).
+# Optimization failed
+# Error loading design
+# End time: 23:04:13 on Aug 07,2020, Elapsed time: 3:37:55
+# Errors: 4, Warnings: 0
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+vsim -vopt -voptargs=+acc work.Controller_StateMachine_tb
+# vsim -vopt -voptargs="+acc" work.Controller_StateMachine_tb 
+# Start time: 23:06:10 on Aug 07,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Controller_StateMachine(fast)".
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+# Compile of Initial_Values.v was successful.
+# Compile of Fingelclip_Model.v was successful.
+# Compile of Fingerclip_Model_TB.v was successful.
+# Compile of Controller.v was successful.
+# Compile of Controller_TB.v was successful.
+# Compile of Controller_StateMachine.v was successful.
+# Compile of Controller_StateMachine_tb.v was successful.
+# Compile of FIR_Filter_TB.v was successful.
+# Compile of FIR_Filter_tb_Dat.v was successful.
+# Compile of FIR_Filter.v was successful.
+# Compile of Top_Module_Controller_and_FIR.v was successful.
+# Compile of FIR_Filter_Optimized.v was successful.
+# Compile of FIR_Filter_version_1.v was successful.
+# Compile of FIR_Filter_Version_3.v was successful.
+# Compile of FIR_Filter_version_2.v was successful.
+# Compile of FIR_Filter_version_4.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Controller_StateMachine(fast)".
+# Loading work.Controller_StateMachine_tb(fast)
+# Loading work.Fingerclip_Model(fast)
+# Loading work.Top_Module_Controller_and_FIR(fast)
+# Loading work.Controller_StateMachine(fast)
+# Loading work.FIR_Filter_Optimized(fast)
+run -all
+# ** Note: $stop    : /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v(48)
+#    Time: 100002300 us  Iteration: 0  Instance: /Controller_StateMachine_tb
+# Break in Module Controller_StateMachine_tb at /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/src/Controller_StateMachine_tb.v line 48
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Out_IR_Filtered
+add wave -position insertpoint sim:/Controller_StateMachine_tb/dut1/Out_IR_Filtered
+# End time: 23:33:46 on Aug 07,2020, Elapsed time: 0:27:36
+# Errors: 0, Warnings: 0

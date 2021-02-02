@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("frontend" "frontend_tb" "schematic" "spectre")
+descriptionText = "None"

@@ -1,0 +1,20 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sun Apr  5 16:07:08 2020 
+Best design point: 1
+Design specs: 
+	frontend:varres_ts:1	corner	Nominal - 
+	R0		27.78k
+Design parameters: 
+	S0		1.8
+	S1		0
+	S3		0
+	S2		0
+	vdd		1.8
+	vss		0
+
+Interactive.1
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.1 completed. 
+Current time: Sun Apr  5 16:07:24 2020 

@@ -1,0 +1,16 @@
+###################################################################
+
+# Created by write_sdc on Fri Jul 10 16:00:50 2015
+
+###################################################################
+set sdc_version 2.0
+
+create_clock [get_ports clk]  -name CLOCK  -period 1.04  -waveform {0 0.52}
+
+# additional clock delay: 0.05
+# additional wire delay of PE array: 0.01
+# new input delay: 0.31 + 0.05 + 0.01 = 0.36
+set_input_delay -clock CLOCK  -max 0.36  [get_ports {operand_in_l operand_in_t operand_in_r operand_in_b}]
+
+# new output delay: 0.67 - 0.05 + 0.01 = 0.63
+set_output_delay -clock CLOCK  -max 0.63  [get_ports {operand_out_l operand_out_t operand_out_r operand_out_b}]

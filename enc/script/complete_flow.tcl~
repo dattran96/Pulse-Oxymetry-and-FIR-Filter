@@ -1,0 +1,28 @@
+#################################
+# COMPLETE IMPLEMENTATION FLOW
+#################################
+
+# Load Design:
+source script/load.tcl
+
+# Settings:
+source script/setup.tcl
+
+# Floorplan:
+source script/floorplan.tcl
+fit
+
+# Placement:
+source script/placement.tcl
+
+# Clock Tree Syntehsis:
+source script/clock_tree.tcl
+
+# Routing:
+source script/route.tcl
+
+# Chip Finishing (Filler cells...):
+# ToDo
+
+# Output hard macro files (.lef, .lib):
+source script/output_files.tcl

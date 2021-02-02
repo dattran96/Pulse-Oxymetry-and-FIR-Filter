@@ -1,0 +1,26 @@
+# constrain design:
+
+reset_design
+
+# LP:
+#create_clock -name "CLOCK" -period 1.1  { clk }
+
+# GP:
+#create_clock -name "CLOCK" -period 0.88  { clk }
+create_clock -name "CLOCK" -period 0.9  { clk }
+
+set_max_area 0
+
+# LP:
+#set_input_delay -max 0.3 -clock CLOCK [get_ports {operand_in}]
+#set_output_delay -max 0.8 -clock CLOCK [get_ports {operand_out}]
+
+# GP:
+#set_input_delay -max 0.2 -clock CLOCK [get_ports {operand_in}]
+#set_output_delay -max 0.7 -clock CLOCK [get_ports {operand_out}]
+set_input_delay -max 0.36 -clock CLOCK [get_ports {operand_in_l operand_in_t operand_in_r operand_in_b}]
+set_output_delay -max 0.71 -clock CLOCK [get_ports {operand_out_l operand_out_t operand_out_r operand_out_b}]
+
+#set_fanout_load 4 [get_ports {operand_out}]
+
+#check_timing

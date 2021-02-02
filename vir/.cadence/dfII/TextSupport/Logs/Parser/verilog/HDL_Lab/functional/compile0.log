@@ -1,0 +1,31 @@
+ncvlog(64): 15.10-s002: (c) Copyright 1995-2015 Cadence Design Systems, Inc.
+DEFINE cdsDefTechLib $CDS_INST_DIR/tools/dfII/etc/cdsDefTechLib 
+|
+ncvlog: *W,DLCPTH (./cds.lib,1): cds.lib Invalid path '/cad/cds03/cadence/2015-16/RHELx86/INCISIVE_15.10.002/tools/dfII/etc/cdsDefTechLib' (cds.lib command ignored).
+DEFINE basic $CDS_INST_DIR/tools/dfII/etc/cdslib/basic 
+|
+ncvlog: *W,DLCPTH (./cds.lib,2): cds.lib Invalid path '/cad/cds03/cadence/2015-16/RHELx86/INCISIVE_15.10.002/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
+DEFINE analogLib $CDS_INST_DIR/tools/dfII/etc/cdslib/artist/analogLib
+|
+ncvlog: *W,DLCPTH (./cds.lib,3): cds.lib Invalid path '/cad/cds03/cadence/2015-16/RHELx86/INCISIVE_15.10.002/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
+TOOL:	ncvlog(64)	15.10-s002: Started on Jul 16, 2018 at 09:44:27 CEST
+ncvlog
+    -use5x
+    -SPECIFICUNIT CLK
+    -zparse /tmp/vamsZparqa7331
+    -NOWARN DLNOHV
+    -work HDL_Lab
+    -view functional
+    -nostdout
+    -logfile /home/dominick/Documents/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/.cadence/dfII/TextSupport/Logs/Parser/verilog/HDL_Lab/functional/compile0.log
+    -messages
+    -cdslib /home/dominick/Documents/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/cds.lib
+    /home/dominick/Documents/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/HDL_Lab/CLK/functional/verilog.v
+
+file: /home/dominick/Documents/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/HDL_Lab/CLK/functional/verilog.v
+	module HDL_Lab.CLK:functional
+		errors: 0, warnings: 0
+	 writing out DPL output:
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 3
+TOOL:	ncvlog(64)	15.10-s002: Exiting on Jul 16, 2018 at 09:44:27 CEST  (total: 00:00:00)

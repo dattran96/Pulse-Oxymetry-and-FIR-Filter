@@ -1,0 +1,69 @@
+Reading file: 
+        /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/HDL_Lab_10/IV_2/veriloga/veriloga.va
+Reading file: 
+        /cadstud/cds03/cadence/2015-16/RHELx86/MMSIM_14.10.765/tools.lnx86/spectre/etc/ahdl/constants.vams
+Reading file: 
+        /cadstud/cds03/cadence/2015-16/RHELx86/MMSIM_14.10.765/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+
+Warning from spectre during AHDL compile.
+    WARNING (VACOMP-1086):
+        "/home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/HDL_Lab_10/IV_2/veriloga/veriloga.va",
+        line 8: `reg' is not a reserved keyword now but will be one in a future
+        release. Parsing `reg' as an identifier for now.
+Error found by spectre during AHDL compile.
+    ERROR (VACOMP-2259): "output reg<<--?  LED_IR, LED_RED;"
+        "/home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/HDL_Lab_10/IV_2/veriloga/veriloga.va",
+        line 8: syntax error.
+    ERROR (VACOMP-2418):
+        "/home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/HDL_Lab_10/IV_2/veriloga/veriloga.va",
+        line 8: Compilation failed because an invalid port direction
+        declaration was found. Either the port specified in the declaration is
+        not in the port list or the declaration is not in the correct format.
+        Declare the port in the module definition or modify the declaration
+        statement, then rerun the simulation.
+    ERROR (VACOMP-2418):
+        "/home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/HDL_Lab_10/IV_2/veriloga/veriloga.va",
+        line 8: Compilation failed because an invalid port direction
+        declaration was found. Either the port specified in the declaration is
+        not in the port list or the declaration is not in the correct format.
+        Declare the port in the module definition or modify the declaration
+        statement, then rerun the simulation.
+    ERROR (VACOMP-2418):
+        "/home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/HDL_Lab_10/IV_2/veriloga/veriloga.va",
+        line 8: Compilation failed because an invalid port direction
+        declaration was found. Either the port specified in the declaration is
+        not in the port list or the declaration is not in the correct format.
+        Declare the port in the module definition or modify the declaration
+        statement, then rerun the simulation.
+Warning from spectre during AHDL compile.
+    WARNING (VACOMP-1086):
+        "/home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/HDL_Lab_10/IV_2/veriloga/veriloga.va",
+        line 9: `reg' is not a reserved keyword now but will be one in a future
+        release. Parsing `reg' as an identifier for now.
+Error found by spectre during AHDL compile.
+    ERROR (VACOMP-2259): "output reg<<--?  [6:0] DC_Comp;"
+        "/home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/HDL_Lab_10/IV_2/veriloga/veriloga.va",
+        line 9: syntax error.
+    ERROR (VACOMP-2418):
+        "/home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/HDL_Lab_10/IV_2/veriloga/veriloga.va",
+        line 9: Compilation failed because an invalid port direction
+        declaration was found. Either the port specified in the declaration is
+        not in the port list or the declaration is not in the correct format.
+        Declare the port in the module definition or modify the declaration
+        statement, then rerun the simulation.
+    ERROR (VACOMP-2418):
+        "/home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/HDL_Lab_10/IV_2/veriloga/veriloga.va",
+        line 9: Compilation failed because an invalid port direction
+        declaration was found. Either the port specified in the declaration is
+        not in the port list or the declaration is not in the correct format.
+        Declare the port in the module definition or modify the declaration
+        statement, then rerun the simulation.
+    ERROR (VACOMP-2418):
+        "/home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/HDL_Lab_10/IV_2/veriloga/veriloga.va",
+        line 9: Compilation failed because an invalid port direction
+        declaration was found. Either the port specified in the declaration is
+        not in the port list or the declaration is not in the correct format.
+        Declare the port in the module definition or modify the declaration
+        statement, then rerun the simulation.
+    ERROR (VACOMP-1814): Maximum allowable errors exceeded. Exiting AHDL
+        compilation....

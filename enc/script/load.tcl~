@@ -1,0 +1,12 @@
+#################################
+# LOAD DESIGN
+#################################
+
+# Load Design:
+source script/Default.globals
+
+# Init Design:
+init_design
+
+# Define MMMC:
+source script/Default.view

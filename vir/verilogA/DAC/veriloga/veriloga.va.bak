@@ -1,0 +1,44 @@
+// VerilogA for verilogA, DAC, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+//----- DAC -----//
+
+module DAC(in, out);
+	parameter real fullscale = 1.8;				//supply voltage
+	parameter integer maxbit = 10, bit = 10;	 //Resolution
+	input [0:9] in;
+	output out;
+	electrical out;
+	electrical [0:9] in;
+	real vlump[maxbit:1];
+	real vout[maxbit:1];  	//voltage
+	real outv, vth;
+	genvar i;  			//index loop
+	integer code[9:0]; //digital code analog begin
+	analog begin
+		@(initial_step) begin
+		vth = fullscale/2;
+		for (i = 1; i <= maxbit; i = i + 1) begin
+			vlump[i] = fullscale / pow(2,i);
+		end
+	end
+	for (i = 1; i <= bit; i = i + 1) begin
+		if (V(in[i-1]) > vth) begin
+			code[i-1] = 1;
+		end else begin
+			code[i-1] = 0;
+		end
+		vout[i] = vlump[i] * code[i-1];
+	end
+		if (bit < maxbit) begin
+			for (i = maxbit; i > bit; i = i - 1) begin
+				vout[i] = 0;
+			end
+		end
+		outv = vout[0]+ vout[1]+vout[2]+vout[3]+vout[4]+vout[5]+vout[6]+vout[7]+vout[8]+vout[9];
+		// V(out) <+ transition(outv, 50n, 50n, 50n);
+		V(out) <+ outv;
+	end
+endmodule

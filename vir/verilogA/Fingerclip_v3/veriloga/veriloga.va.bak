@@ -1,0 +1,43 @@
+// VerilogA for verilogA, Fingerclip_v3, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+ 
+module Fingerclip_v3( IREDFW, IIRFW, IPD, GND);
+
+inout IREDFW, IIRFW; 
+output IPD, GND;
+electrical  IREDFW, IIRFW , IPD, GND;
+  
+real  idc, iac1, iac2, iac3, iac4, iac5, iac6, Icp, iredfw, iirfw;
+real time_corrected;
+parameter real vfred = 1.5, vfir = -1.1;
+//real R = 300; 
+analog begin
+
+ 
+	Icp = I(IREDFW, IIRFW); 
+   // R   =  $table_model (Icp, "my_data4.tbl", "3C")		   ; // for forward current calc
+	idc =  $table_model (Icp, "my_data2.tbl", "3C")/1000000; // current to current ratio of LED and DIode
+
+	time_corrected = $realtime;
+	while(time_corrected > 3) time_corrected = time_corrected - 1;
+
+    iac1 = idc* (0.02*exp(-pow(($realtime-0), 2)/(2*pow(0.14, 2)))+0.02*0.32*exp(-pow(($realtime-0.32), 2)/(2*pow(0.1, 2))));
+	iac2 = idc* (0.02*exp(-pow(($realtime-1), 2)/(2*pow(0.14, 2)))+0.02*0.32*exp(-pow(($realtime-1.32), 2)/(2*pow(0.1, 2))));
+	iac3 = idc* (0.02*exp(-pow(($realtime-2), 2)/(2*pow(0.14, 2)))+0.02*0.32*exp(-pow(($realtime-2.32), 2)/(2*pow(0.1, 2))));	
+	iac4 = idc* (0.02*exp(-pow(($realtime-3), 2)/(2*pow(0.14, 2)))+0.02*0.32*exp(-pow(($realtime-3.32), 2)/(2*pow(0.1, 2))));
+	iac5 = idc* (0.02*exp(-pow(($realtime-4), 2)/(2*pow(0.14, 2)))+0.02*0.32*exp(-pow(($realtime-4.32), 2)/(2*pow(0.1, 2))));
+	iac6 = idc* (0.02*exp(-pow(($realtime-5), 2)/(2*pow(0.14, 2)))+0.02*0.32*exp(-pow(($realtime-5.32), 2)/(2*pow(0.1, 2))));
+
+//	if ((V(IREDFW, IIRFW) >= vfred) || (V(IREDFW, IIRFW) <= vfir))
+		I(IPD) 	  <+  idc + iac1 + iac2 + iac3+ iac4 + iac5 + iac6;
+//	else
+//	 	I(IPD)	  <+ 0;
+	//V(IREDFW, IIRFW) <+ R * I(IREDFW, IIRFW); nicht linear
+    I(IREDFW, IIRFW); // kein spannungsabfall im model!!!
+   // V(IREDFW, IIRFW);
+end //analog
+endmodule
+
+

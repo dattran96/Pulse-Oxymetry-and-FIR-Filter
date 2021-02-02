@@ -1,0 +1,1 @@
+update_constraint_mode -name timing -sdc_files [list PE_top_timing_postCTS.sdc]

@@ -1,0 +1,7 @@
+read_file -format sverilog mux.sv
+read_file -format sverilog alu.sv
+read_file -format sverilog cfg_mem.sv
+read_file -format sverilog reg_file.sv
+read_file -format sverilog barrel_shifter.sv
+read_file -format sverilog block_multiplier.sv
+read_file -format sverilog complementer.sv

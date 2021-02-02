@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      vhdlp10
+HostName                       amnesix.ies.e-technik.tu-darmstadt.de
+ProcessIdentifier              26488
+ProcessCreationTime_UTC        1596622860
+ProcessCreationTime_Readable   Wed Aug  5 12:21:00 2020 CEST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/vhdlp10/Documents/hdl_lab/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/HDL_Lab_10/Controller/symbol/symbol.oa.cdslck.dirlck
+TimeEditLocked                 Wed Aug  5 16:45:30 2020 CEST

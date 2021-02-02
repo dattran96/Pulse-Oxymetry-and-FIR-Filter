@@ -1,0 +1,4 @@
+#################################
+# ELABORATE THE DESIGN
+#################################
+elaborate ${TOP_LEVEL_MODULE} -architecture verilog -library WORK

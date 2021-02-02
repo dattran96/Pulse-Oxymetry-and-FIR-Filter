@@ -1,0 +1,132 @@
+datapath sdp {
+	column regfile {
+		row mem0 {
+			inst reg_mem_reg[0][0:31]
+		}
+		skipSpace 1
+		row mem1 {
+			inst reg_mem_reg[1][0:31]
+		}
+		skipSpace 1
+		row mem2 {
+			inst reg_mem_reg[2][0:31]
+		}
+		skipSpace 1
+		row mem3 {
+			inst reg_mem_reg[3][0:31]
+		}
+		skipSpace 1
+		row mem4 {
+			inst reg_mem_reg[4][0:31]
+		}
+		skipSpace 1
+		row mem5 {
+			inst reg_mem_reg[5][0:31]
+		}
+		skipSpace 1
+		row mem6 {
+			inst reg_mem_reg[6][0:31]
+		}
+		skipSpace 1
+		row mem7 {
+			inst reg_mem_reg[7][0:31]
+		}
+		skipSpace 1
+		row mem8 {
+			inst reg_mem_reg[8][0:31]
+		}
+		skipSpace 1
+		row mem9 {
+			inst reg_mem_reg[9][0:31]
+		}
+		skipSpace 1
+		row mem10 {
+			inst reg_mem_reg[10][0:31]
+		}
+		skipSpace 1
+		row mem11 {
+			inst reg_mem_reg[11][0:31]
+		}
+		skipSpace 1
+		row mem12 {
+			inst reg_mem_reg[12][0:31]
+		}
+		skipSpace 1
+		row mem13 {
+			inst reg_mem_reg[13][0:31]
+		}
+		skipSpace 1
+		row mem14 {
+			inst reg_mem_reg[14][0:31]
+		}
+		skipSpace 1
+		row mem15 {
+			inst reg_mem_reg[15][0:31]
+		}
+		skipSpace 1
+		row mem16 {
+			inst reg_mem_reg[16][0:31]
+		}
+		skipSpace 1
+		row mem17 {
+			inst reg_mem_reg[17][0:31]
+		}
+		skipSpace 1
+		row mem18 {
+			inst reg_mem_reg[18][0:31]
+		}
+		skipSpace 1
+		row mem19 {
+			inst reg_mem_reg[19][0:31]
+		}
+		skipSpace 1
+		row mem20 {
+			inst reg_mem_reg[20][0:31]
+		}
+		skipSpace 1
+		row mem21 {
+			inst reg_mem_reg[21][0:31]
+		}
+		skipSpace 1
+		row mem22 {
+			inst reg_mem_reg[22][0:31]
+		}
+		skipSpace 1
+		row mem23 {
+			inst reg_mem_reg[23][0:31]
+		}
+		skipSpace 1
+		row mem24 {
+			inst reg_mem_reg[24][0:31]
+		}
+		skipSpace 1
+		row mem25 {
+			inst reg_mem_reg[25][0:31]
+		}
+		skipSpace 1
+		row mem26 {
+			inst reg_mem_reg[26][0:31]
+		}
+		skipSpace 1
+		row mem27 {
+			inst reg_mem_reg[27][0:31]
+		}
+		skipSpace 1
+		row mem28 {
+			inst reg_mem_reg[28][0:31]
+		}
+		skipSpace 1
+		row mem29 {
+			inst reg_mem_reg[29][0:31]
+		}
+		skipSpace 1
+		row mem30 {
+			inst reg_mem_reg[30][0:31]
+		}
+		skipSpace 1
+		row mem31 {
+			inst reg_mem_reg[31][0:31]
+		}
+		skipSpace 1
+	}
+}

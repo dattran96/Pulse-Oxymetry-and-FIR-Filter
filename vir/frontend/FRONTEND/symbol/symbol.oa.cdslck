@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      rudolfk
+HostName                       informatix.ies.e-technik.tu-darmstadt.de
+ProcessIdentifier              14843
+ProcessCreationTime_UTC        1584432177
+ProcessCreationTime_Readable   Tue Mar 17 09:02:57 2020 CET
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/rudolfk/masterarbeit/source/implementation/tech_files/umc_65_ll/frontend/FRONTEND/symbol/symbol.oa.cdslck.dirlck
+TimeEditLocked                 Tue Mar 17 09:50:40 2020 CET

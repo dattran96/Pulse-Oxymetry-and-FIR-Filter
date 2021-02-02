@@ -1,0 +1,47 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sun Apr 12 12:47:59 2020 
+Best design point: 1
+Design specs: 
+	frontend:led_drive_tb:1	corner	Nominal - 
+	IIRFW		-6.388m	Yes
+	IPD		1.49u
+	IREDFW		6.388m	Yes
+	I_VDD_value		6.388m
+	I3_value		269u
+	I2_value		816.6u
+	I1_value		1.771m
+	I0_value		3.532m
+	I_LED0		10.83n
+	I_LED1		356u
+	I_LED2		977.3u
+	I_LED3		1.311m
+	I_LED4		1.952m
+	I_LED5		2.271m
+	I_LED6		2.852m
+	I_LED7		3.15m
+	I_LED8		3.767m
+	I_LED9		4.05m
+	I_LED10		4.582m
+	I_LED11		4.843m
+	I_LED12		5.444m
+	I_LED13		5.689m
+	I_LED14		6.163m
+	I_LED15		6.388m
+Design parameters: 
+	S0		1.8
+	S1		1.8
+	S2		1.8
+	S3		1.8
+	S4		1.8
+	S5		0
+	vdd		1.8
+	vss		0
+	sigma		3
+	Vforward		0
+
+Interactive.0
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.0 completed. 
+Current time: Sun Apr 12 12:48:40 2020 

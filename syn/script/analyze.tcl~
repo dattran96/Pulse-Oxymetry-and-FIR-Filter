@@ -1,0 +1,6 @@
+#################################
+# ANALYZE THE DESIGN FILES
+#################################
+analyze -library WORK -format sv $FILE_LIST
+
+set_fix_multiple_port_nets -all $TOP_LEVEL_MODULE

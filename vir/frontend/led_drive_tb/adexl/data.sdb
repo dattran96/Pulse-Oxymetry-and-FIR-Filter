@@ -1,0 +1,895 @@
+<?xml version="1.0"?>
+<setupdb version="5">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+			<corner enabled="0">Corner
+				<vars>
+					<var>temperature
+						<value>-25 25 85</value>
+					</var>
+					<var>vdd
+						<value>1.62 1.8 1.98</value>
+					</var>
+				</vars>
+				<models>
+					<model enabled="1">l65ll_v181.lib.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+						<modelsection>"ss_ll_io25od33" "ff_ll_io25od33" "fnsp_ll_io25od33" "snfp_tn_ll_io25od33"</modelsection>
+					</model>
+					<model enabled="1">l65ll_v181.lib.scs:1
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+						<modelsection>"ff_ll_res" "ss_ll_res"</modelsection>
+					</model>
+					<model enabled="0">l65ll_v181_mc.lib.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/Monte_Carlo/l65ll_v181_mc.lib.scs</modelfile>
+						<modelsection></modelsection>
+					</model>
+					<model enabled="0">l65ll_v181_mc.lib.scs:1
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/Monte_Carlo/l65ll_v181_mc.lib.scs</modelfile>
+						<modelsection></modelsection>
+					</model>
+				</models>
+			</corner>
+			<corner enabled="0">MC
+				<models>
+					<model enabled="0">l65ll_v181.lib.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+						<modelsection></modelsection>
+					</model>
+					<model enabled="0">l65ll_v181.lib.scs:1
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+						<modelsection></modelsection>
+					</model>
+					<model enabled="1">l65ll_v181_mc.lib.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/Monte_Carlo/l65ll_v181_mc.lib.scs</modelfile>
+						<modelsection>"mc_ll_io25od33"</modelsection>
+					</model>
+					<model enabled="1">l65ll_v181_mc.lib.scs:1
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/Monte_Carlo/l65ll_v181_mc.lib.scs</modelfile>
+						<modelsection>"mc_ll_res"</modelsection>
+					</model>
+				</models>
+			</corner>
+		</corners>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<overwritehistory>1</overwritehistory>
+		<tests>
+			<test enabled="1">frontend:led_drive_tb:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>led_drive_tb</value>
+					</option>
+					<option>lib
+						<value>frontend</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>config</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>frontend:led_drive_tb:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>led_drive_tb</value>
+					</option>
+					<option>lib
+						<value>frontend</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>led_drive</value>
+					</option>
+				</origoptions>
+			</test>
+		</tests>
+		<vars>
+			<var enabled="1">S0
+				<value>1.8</value>
+				<dependentTests>
+					<dependentTest enabled="1">frontend:led_drive_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>S1
+				<value>1.8</value>
+				<dependentTests>
+					<dependentTest enabled="1">frontend:led_drive_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>S2
+				<value>1.8</value>
+				<dependentTests>
+					<dependentTest enabled="1">frontend:led_drive_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>S3
+				<value>1.8</value>
+				<dependentTests>
+					<dependentTest enabled="1">frontend:led_drive_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>S4
+				<value>1.8</value>
+				<dependentTests>
+					<dependentTest enabled="1">frontend:led_drive_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>S5
+				<value>0</value>
+				<dependentTests>
+					<dependentTest enabled="1">frontend:led_drive_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>vdd
+				<value>1.8</value>
+				<dependentTests>
+					<dependentTest enabled="1">frontend:led_drive_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>vss
+				<value>0</value>
+				<dependentTests>
+					<dependentTest enabled="1">frontend:led_drive_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>sigma
+				<value>3</value>
+			</var>
+			<var>Vforward
+				<value>0</value>
+				<dependentTests></dependentTests>
+			</var>
+		</vars>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+		</plottingoptions>
+		<specs>
+			<spec>frontend:led_drive_tb:1.V_LED
+				<testname>frontend:led_drive_tb:1</testname>
+				<resname>V_LED</resname>
+				<specType>gt</specType>
+				<min>1.5</min>
+				<max></max>
+				<target></target>
+				<tol></tol>
+			</spec>
+			<spec>frontend:led_drive_tb:1.IREDFW
+				<testname>frontend:led_drive_tb:1</testname>
+				<resname>IREDFW</resname>
+				<specType>lt</specType>
+				<min></min>
+				<max>9.24m</max>
+				<target></target>
+				<tol></tol>
+			</spec>
+			<spec>frontend:led_drive_tb:1.IIRFW
+				<testname>frontend:led_drive_tb:1</testname>
+				<resname>IIRFW</resname>
+				<specType>gt</specType>
+				<min>-9.24m</min>
+				<max></max>
+				<target></target>
+				<tol></tol>
+			</spec>
+		</specs>
+		<jobpolicyname>ADE XL Default</jobpolicyname>
+		<runoptions>
+			<mode>Monte Carlo Sampling
+				<runoption>mcmethod
+					<value>all</value>
+				</runoption>
+				<runoption>mcnumpoints
+					<value>500</value>
+				</runoption>
+				<runoption>mcnumbins
+					<value></value>
+				</runoption>
+				<runoption>mcStopEarly
+					<value>0</value>
+				</runoption>
+				<runoption>mcStopMethod
+					<value>Significance Test</value>
+				</runoption>
+				<runoption>samplingmode
+					<value>random</value>
+				</runoption>
+				<runoption>saveprocess
+					<value>1</value>
+				</runoption>
+				<runoption>savemismatch
+					<value>0</value>
+				</runoption>
+				<runoption>mcreferencepoint
+					<value>0</value>
+				</runoption>
+				<runoption>donominal
+					<value>1</value>
+				</runoption>
+				<runoption>saveallplots
+					<value>0</value>
+				</runoption>
+				<runoption>montecarloseed
+					<value></value>
+				</runoption>
+				<runoption>mcstartingrunnumber
+					<value></value>
+				</runoption>
+				<runoption>dumpParamMode
+					<value>yes</value>
+				</runoption>
+			</mode>
+		</runoptions>
+	</active>
+	<history>History
+		<historyentry>Interactive.1
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">Corner
+						<vars>
+							<var>temperature
+								<value>-25 85</value>
+							</var>
+							<var>vdd
+								<value>1.62 1.98</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">l65ll_v181.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+								<modelsection>"ss_ll_io25od33" "ll_io25od33" "ff_ll_io25od33" "fnsp_ll_io25od33" "snfp_tn_ll_io25od33"</modelsection>
+							</model>
+							<model enabled="1">l65ll_v181.lib.scs:1
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+								<modelsection>"ff_ll_res" "ss_ll_res"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">frontend:led_drive_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>led_drive_tb</value>
+							</option>
+							<option>lib
+								<value>frontend</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>frontend:led_drive_tb:1_led_drive_Interactive.1</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>led_drive_tb</value>
+							</option>
+							<option>lib
+								<value>frontend</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>led_drive</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>S0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S1
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S2
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S3
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S4
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S5
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vss
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>frontend:led_drive_tb:1.V_LED
+						<testname>frontend:led_drive_tb:1</testname>
+						<resname>V_LED</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>1.4</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Mar 17 07:17:59 2020</timestamp>
+			<resultsname>/home/rudolfk/masterarbeit/source/implementation/tech_files/umc_65_ll/frontend/led_drive_tb/adexl/results/data/Interactive.1.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.1.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/informatix.ies.e-technik.tu-darmstadt.de_rudolfk_071759760</localpsfdir>
+			<psfdir>/home/rudolfk/simulation/frontend/led_drive_tb/adexl/results/data/Interactive.1</psfdir>
+			<simdir>$AXL_PROJECT_DIR/frontend/led_drive_tb/adexl/results/data/Interactive.1</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/rudolfk/masterarbeit/source/implementation/tech_files/umc_65_ll/frontend/led_drive_tb/adexl/results/data/Interactive.1.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.1.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.2
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">Corner
+						<vars>
+							<var>temperature
+								<value>-25 85</value>
+							</var>
+							<var>vdd
+								<value>1.62 1.98</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">l65ll_v181.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+								<modelsection>"ss_ll_io25od33" "ll_io25od33" "ff_ll_io25od33" "fnsp_ll_io25od33" "snfp_tn_ll_io25od33"</modelsection>
+							</model>
+							<model enabled="1">l65ll_v181.lib.scs:1
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+								<modelsection>"ff_ll_res" "ss_ll_res"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">frontend:led_drive_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>led_drive_tb</value>
+							</option>
+							<option>lib
+								<value>frontend</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>frontend:led_drive_tb:1_led_drive_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>led_drive_tb</value>
+							</option>
+							<option>lib
+								<value>frontend</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>led_drive</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>S0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S1
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S2
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S3
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S4
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S5
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vss
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>frontend:led_drive_tb:1.V_LED
+						<testname>frontend:led_drive_tb:1</testname>
+						<resname>V_LED</resname>
+						<specType>gt</specType>
+						<min>1.4</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Mar 17 07:19:43 2020</timestamp>
+			<resultsname>/home/rudolfk/masterarbeit/source/implementation/tech_files/umc_65_ll/frontend/led_drive_tb/adexl/results/data/Interactive.2.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/informatix.ies.e-technik.tu-darmstadt.de_rudolfk_071943702</localpsfdir>
+			<psfdir>/home/rudolfk/simulation/frontend/led_drive_tb/adexl/results/data/Interactive.2</psfdir>
+			<simdir>$AXL_PROJECT_DIR/frontend/led_drive_tb/adexl/results/data/Interactive.2</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/rudolfk/masterarbeit/source/implementation/tech_files/umc_65_ll/frontend/led_drive_tb/adexl/results/data/Interactive.2.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.0
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">Corner
+						<vars>
+							<var>temperature
+								<value>-25 25 85</value>
+							</var>
+							<var>vdd
+								<value>1.62 1.8 1.98</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">l65ll_v181.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+								<modelsection>"ss_ll_io25od33" "ff_ll_io25od33" "fnsp_ll_io25od33" "snfp_tn_ll_io25od33"</modelsection>
+							</model>
+							<model enabled="1">l65ll_v181.lib.scs:1
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+								<modelsection>"ff_ll_res" "ss_ll_res"</modelsection>
+							</model>
+							<model enabled="0">l65ll_v181_mc.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/Monte_Carlo/l65ll_v181_mc.lib.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">l65ll_v181_mc.lib.scs:1
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/Monte_Carlo/l65ll_v181_mc.lib.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">MC
+						<models>
+							<model enabled="0">l65ll_v181.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">l65ll_v181.lib.scs:1
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">l65ll_v181_mc.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/Monte_Carlo/l65ll_v181_mc.lib.scs</modelfile>
+								<modelsection>"mc_ll_io25od33"</modelsection>
+							</model>
+							<model enabled="1">l65ll_v181_mc.lib.scs:1
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/Monte_Carlo/l65ll_v181_mc.lib.scs</modelfile>
+								<modelsection>"mc_ll_res"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>1</overwritehistory>
+				<tests>
+					<test enabled="1">frontend:led_drive_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>led_drive_tb</value>
+							</option>
+							<option>lib
+								<value>frontend</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>frontend:led_drive_tb:1_led_drive_Interactive.0</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>led_drive_tb</value>
+							</option>
+							<option>lib
+								<value>frontend</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>led_drive</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">S0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S1
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S2
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S3
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S4
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S5
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vss
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">frontend:led_drive_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>sigma
+						<value>3</value>
+					</var>
+					<var>Vforward
+						<value>0</value>
+						<dependentTests></dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>frontend:led_drive_tb:1.IREDFW
+						<testname>frontend:led_drive_tb:1</testname>
+						<resname>IREDFW</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>9.24m</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>frontend:led_drive_tb:1.IIRFW
+						<testname>frontend:led_drive_tb:1</testname>
+						<resname>IIRFW</resname>
+						<specType>gt</specType>
+						<min>-9.24m</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>500</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcStopMethod
+							<value>Significance Test</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>0</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>0</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>yes</value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sun Apr 12 12:47:58 2020
+</timestamp>
+			<resultsname>/home/rudolfk/masterarbeit/source/implementation/tech_files/umc_65_ll/frontend/led_drive_tb/adexl/results/data/Interactive.0.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.0.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/informatix.ies.e-technik.tu-darmstadt.de_rudolfk_124758420</localpsfdir>
+			<psfdir>/home/rudolfk/simulation/frontend/led_drive_tb/adexl/results/data/Interactive.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/frontend/led_drive_tb/adexl/results/data/Interactive.0</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/rudolfk/masterarbeit/source/implementation/tech_files/umc_65_ll/frontend/led_drive_tb/adexl/results/data/Interactive.0.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.0.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

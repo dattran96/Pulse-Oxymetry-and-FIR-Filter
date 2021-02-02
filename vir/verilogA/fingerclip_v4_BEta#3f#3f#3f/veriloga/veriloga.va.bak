@@ -1,0 +1,9 @@
+// VerilogA for verilogA, fingerclip_v4, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module fingerclip_v4;
+
+
+endmodule

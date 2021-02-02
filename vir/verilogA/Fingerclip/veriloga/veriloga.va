@@ -1,0 +1,43 @@
+// VerilogA for verilogA, Fingerclip, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+ 
+module Fingerclip( VLED, VPD, GND);
+ 
+input VLED; output VPD, GND;
+electrical VLED, VPD, GND;
+  
+real iout, itemp, idc, iac, Vcp;
+integer vled;
+
+//parameters
+
+//need to find real parameters
+parameter real	 c = 0.05, // signal contrast - need to adjust this
+				 fH = 0.8,  // Hearth frequency of 75bpm
+				 alpha = 20, // alpha = Idc/ILED
+				 ILED = 0.180u; //PEAK AC Current
+
+analog begin
+ 
+	@(initial_step)	begin 
+		vled = 0;
+	end
+ 
+	Vcp = V(VLED, GND);
+ 
+	idc =  $table_model (Vcp, "my_data1.tbl", "3C")/1000000;
+    iac =  0.02*idc*cos(`M_TWO_PI*fH*$realtime); //for test purpose 0.18u peak
+ 
+
+
+	
+
+	I(VPD,GND) <+  idc;
+	I(VPD,GND) <+  iac;
+end //analog
+endmodule
+
+

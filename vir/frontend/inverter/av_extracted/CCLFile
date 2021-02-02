@@ -1,0 +1,47 @@
+#
+# OPTION COMMAND FILE created by Cadence Quantus QRC Extraction Version 15.1.1-s174 from CCL
+#
+capacitance \
+	 -decoupling_factor 1.0 \
+	 -ground_net "vss"
+extract \
+	 -selection "all" \
+	 -type "rc_decoupled"
+extraction_setup \
+	 -array_vias_spacing auto \
+	 -macro_cells_type "default" \
+	 -max_fracture_length infinite \
+	 -max_fracture_length_unit "MICRONS" \
+	 -max_via_array_size \
+		"auto" \
+	 -net_name_space "LAYOUT"
+filter_res \
+	 -min_res 0.001
+input_db -type assura \
+	 -design_cell_name "inverter layout frontend" \
+	 -directory_name "/home/rudolfk/masterarbeit/source/implementation/tech_files/umc_65_ll/vir/AssuraLVS" \
+	 -format "DFII" \
+	 -run_name "lvs"
+log_file \
+	 -file_name "/home/rudolfk/masterarbeit/source/implementation/tech_files/umc_65_ll/vir/AssuraLVS/qrc.log"
+output_db -type extracted_view \
+	 -cap_component "pcapacitor" \
+	 -cap_property_name "c" \
+	 -enable_cellview_check false \
+	 -include_cap_model "true" \
+	 -include_parasitic_cap_model "false" \
+	 -include_parasitic_res_model "comment" \
+	 -include_res_model "false" \
+	 -res_component "presistor" \
+	 -res_property_name "r" \
+	 -view_name "av_extracted"
+output_setup \
+	 -directory_name "/home/rudolfk/masterarbeit/source/implementation/tech_files/umc_65_ll/vir/AssuraLVS" \
+	 -temporary_directory_name "lvs"
+process_technology \
+	 -technology_directory \
+		"/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/RuleDecks/QRC/G-DF-LOGIC_MIXED_MODE65N-1P8M1T0F1U-LL_LOW_K_TOP_METAL32.5K-QRC-LPE-1.0-P1/typical" \
+	 -temperature \
+		25.0
+
+

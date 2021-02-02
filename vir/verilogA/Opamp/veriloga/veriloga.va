@@ -1,0 +1,34 @@
+// VerilogA for verilogA, Opamp, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module Opamp(inp,inm,out,vdd,vss);
+	input inp,inm,vdd,vss; output out;
+	electrical inp,inm,out,vdd,vss,N;
+	parameter real	Gain=1k,		//DC gain (V/V)
+					Vio=0,			//input offset (V)
+					GBW=10M,		//Gain-Bandwidth product (Hz)
+					Rdc=300,		//DC output resistance (ohms)
+					Rac=100;		//AC & Sat output resistance (ohms)
+	real Gm, Rres, Ccap, Vnom;		//internatl variables
+//Macro for diode-like exponential dependence between voltage & current;
+//Returns current of isat when voltage is zero, and decreases by
+//a factor of 100 for each dV decrease of input voltage;
+	`define fclip(V,isat,dV) isat*exp(4.6*(V)/(dV))
+	analog begin
+		@(initial_step) begin 		//constants computed at startup
+		Rres = Rdc-Rac;				//inner resistor value
+		Gm = Gain/Rres;				//input transconductance
+		Ccap = 1 / (`M_TWO_PI*GBW/Gm);// capacitor to get specific GBW
+		end
+
+//Contributions of current for each branch in the topology diagram:
+	I(N,vss) <+ -Gm*V(inp,inm);				//transconductance from input
+	I(N,vss) <+ (V(N,vss)-V(vdd,vss)/2)/Rres;//resistor equation: I=V/R
+	I(N,vss) <+ ddt(Ccap*V(N,vss));			//Capacitor equation: I=d(CV)/dT
+	I(N,vss) <+ `fclip(V(N,vdd),1,40m)		//top & bottom parts of limiter
+				-`fclip(V(vss,N),1,40m);
+	I(N,out) <+ V(N,out) / Rac;				//series resistance on output
+	end
+endmodule

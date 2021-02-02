@@ -1,0 +1,38 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Mar 23 15:09:50 2020 
+Best design point: 1
+Design specs: 
+	schematic	corner	Nominal - 
+	DC_COMP		-1.497u
+	I_PD		1.41u
+	layout	corner	Nominal - 
+	DC_COMP		-1.468u
+	I_PD		1.518u
+Design parameters: 
+	leddrive5		0
+	leddrive4		1.8
+	leddrive3		1.8
+	leddrive2		1.8
+	leddrive1		1.8
+	leddrive0		1.8
+	dccomp6		1.8
+	dccomp5		0
+	dccomp4		1.8
+	dccomp3		1.8
+	dccomp2		1.8
+	dccomp1		1.8
+	dccomp0		1.8
+	Varres3		1.8
+	Varres2		1.8
+	Varres1		0
+	Varres0		1.8
+	VDD		1.8
+	VSS		0
+	Vcm		900m
+
+Interactive.3
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.3 completed. 
+Current time: Mon Mar 23 15:10:24 2020 

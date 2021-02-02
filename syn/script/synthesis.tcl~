@@ -1,0 +1,8 @@
+set PROJECT_PATH		"/home/nicoa/Projekte/CGRA_40nm/PE_V1"
+
+source "${PROJECT_PATH}/syn/script/setup.tcl"
+source "${PROJECT_PATH}/syn/script/analyze.tcl"
+source "${PROJECT_PATH}/syn/script/elaborate.tcl"
+source "${PROJECT_PATH}/syn/script/constrain.tcl"
+source "${PROJECT_PATH}/syn/script/compile.tcl"
+source "${PROJECT_PATH}/syn/script/report.tcl"

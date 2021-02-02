@@ -1,0 +1,32 @@
+// VerilogA for Verilog-A, Fingerclip, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module Fingerclip(clk,Intensity_Red, Intensity_Infrarot, Red_On_Infrared_Off, Photodiode_Voltage_Out);
+electrical Photodiode_Voltage_Out;
+electrical Intensity_Red;
+electrical clk;
+
+
+parameter real slewrate = 5000;
+parameter real vtrans = 1;
+
+real Daten;
+integer fileHandle;
+
+
+	analog begin
+
+	@ (initial_step)
+        fileHandle = $fopen("/home/dominick/Documents/Cadence/HDL_Lab_UMC_65_2020/HDL_Lab_UMC_65/implementation/umc_65_ll/vir/Data.dat", "r");
+		
+	@ (cross (V(clk) - vtrans,+1)) begin
+        $fscanf(fileHandle,"%e", Daten);
+		$display(Daten);
+	end
+		V(Photodiode_Voltage_Out) <+ slew(Daten, slewrate);
+		
+	end
+
+endmodule

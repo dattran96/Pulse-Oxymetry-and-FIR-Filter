@@ -1,0 +1,48 @@
+// VerilogA for verilogA, Fingerclip_v2, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+ 
+module Fingerclip_v2( ILED, IPD, GND);
+ 
+input ILED; output IPD, GND;
+electrical ILED, IPD, GND;
+  
+real  idc, iac1, iac2, iac3, iac4, iac5, iac6, Icp;
+
+
+//parameters
+
+//need to find real parameters
+parameter real	 c = 0.02/2, // signal contrast - need to adjust this
+				 fH = 0.8,  // Hearth frequency of 75bpm
+				 alpha = 20, // alpha = Idc/ILED
+				 Ipeak = 0.180u; //PEAK AC Current
+
+analog begin
+
+ 
+	Icp = I(ILED);
+ 
+	idc =  $table_model (Icp, "my_data2.tbl", "3C")/1000000;
+  // iac =  $table_model (Icp, "my_data2.tbl", "3C")/1000000* c*cos(`M_TWO_PI*fH*$realtime); //5% of dc current
+    iac1 = idc* (0.02*exp(-pow(($realtime-0), 2)/(2*pow(0.14, 2)))+0.02*0.32*exp(-pow(($realtime-0.32), 2)/(2*pow(0.1, 2))));
+	iac2 = idc* (0.02*exp(-pow(($realtime-1), 2)/(2*pow(0.14, 2)))+0.02*0.32*exp(-pow(($realtime-1.32), 2)/(2*pow(0.1, 2))));
+	iac3 = idc* (0.02*exp(-pow(($realtime-2), 2)/(2*pow(0.14, 2)))+0.02*0.32*exp(-pow(($realtime-2.32), 2)/(2*pow(0.1, 2))));	
+	iac4 = idc* (0.02*exp(-pow(($realtime-3), 2)/(2*pow(0.14, 2)))+0.02*0.32*exp(-pow(($realtime-3.32), 2)/(2*pow(0.1, 2))));
+	iac5 = idc* (0.02*exp(-pow(($realtime-4), 2)/(2*pow(0.14, 2)))+0.02*0.32*exp(-pow(($realtime-4.32), 2)/(2*pow(0.1, 2))));
+	iac6 = idc* (0.02*exp(-pow(($realtime-5), 2)/(2*pow(0.14, 2)))+0.02*0.32*exp(-pow(($realtime-5.32), 2)/(2*pow(0.1, 2))));
+
+
+	I(IPD,GND) <+  idc;
+	I(IPD,GND) <+  iac1;
+	I(IPD,GND) <+  iac2;
+	I(IPD,GND) <+  iac3;
+	I(IPD,GND) <+  iac4;
+	I(IPD,GND) <+  iac5;
+	I(IPD,GND) <+  iac6;
+end //analog
+endmodule
+
+
+

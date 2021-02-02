@@ -1,0 +1,6 @@
+//Verilog HDL for "HDL_Lab_10", "Initial_Values" "functional"
+
+
+module Initial_Values ( );
+
+endmodule

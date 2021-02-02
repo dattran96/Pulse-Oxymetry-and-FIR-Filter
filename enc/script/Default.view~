@@ -1,0 +1,8 @@
+# Version:1.0 MMMC View Definition File
+# Do Not Remove Above Line
+create_rc_corner -name tt -cap_table {/cad/synopsys/libs/TSMC_40nm/digital/Back_End/lef/tcbn45gsbwp12t_120c/techfiles/captable/cln40g_1p09m+alrdl_6x2z_typical.captab} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0}
+create_library_set -name tt -timing {/cad/synopsys/libs/TSMC_40nm/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwp12t_200a/tcbn45gsbwp12ttc.lib /cad/synopsys/libs/TSMC_40nm/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwp12thvt_200a/tcbn45gsbwp12thvttc.lib /cad/synopsys/libs/TSMC_40nm/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwp12tlvt_200a/tcbn45gsbwp12tlvttc.lib ../../resource/SRAM_128_34/Front_end/ts1n45gsa128x34m4f_120a/NLDM/ts1n45gsa128x34m4f_120a_tt0p9v25c.lib}
+create_constraint_mode -name timing -sdc_files {script/PE_top_timing_preCTS.sdc}
+create_delay_corner -name tt -library_set {tt} -rc_corner {tt}
+create_analysis_view -name tt -constraint_mode {timing} -delay_corner {tt}
+set_analysis_view -setup {tt} -hold {tt}

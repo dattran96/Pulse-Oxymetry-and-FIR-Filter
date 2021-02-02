@@ -1,0 +1,870 @@
+<?xml version="1.0"?>
+<setupdb version="5">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+			<corner enabled="0">corner
+				<vars>
+					<var>temperature
+						<value>-25 25 85</value>
+					</var>
+					<var>vdd
+						<value>1.62 1.8 1.98</value>
+					</var>
+				</vars>
+				<models>
+					<model enabled="1">l65ll_v181.lib.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+						<modelsection>"ss_ll_io25od33" "ff_ll_io25od33" "fnsp_ll_io25od33" "snfp_ll_io25od33"</modelsection>
+					</model>
+					<model enabled="1">l65ll_v181.lib.scs:1
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+						<modelsection>"ff_ll_res" "ss_ll_res"</modelsection>
+					</model>
+					<model enabled="0">l65ll_v181_mc.lib.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/Monte_Carlo/l65ll_v181_mc.lib.scs</modelfile>
+						<modelsection></modelsection>
+					</model>
+					<model enabled="0">l65ll_v181_mc.lib.scs:1
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/Monte_Carlo/l65ll_v181_mc.lib.scs</modelfile>
+						<modelsection></modelsection>
+					</model>
+				</models>
+			</corner>
+			<corner enabled="0">MC
+				<models>
+					<model enabled="0">l65ll_v181.lib.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+						<modelsection></modelsection>
+					</model>
+					<model enabled="0">l65ll_v181.lib.scs:1
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+						<modelsection></modelsection>
+					</model>
+					<model enabled="1">l65ll_v181_mc.lib.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/Monte_Carlo/l65ll_v181_mc.lib.scs</modelfile>
+						<modelsection>"mc_ll_io25od33"</modelsection>
+					</model>
+					<model enabled="1">l65ll_v181_mc.lib.scs:1
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/Monte_Carlo/l65ll_v181_mc.lib.scs</modelfile>
+						<modelsection>"mc_ll_res"</modelsection>
+					</model>
+				</models>
+			</corner>
+		</corners>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<overwritehistory>1</overwritehistory>
+		<tests>
+			<test enabled="1">frontend:varres_ts:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>varres_ts</value>
+					</option>
+					<option>lib
+						<value>frontend</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>config</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>frontend:varres_ts:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>varres_ts</value>
+					</option>
+					<option>lib
+						<value>frontend</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>config</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>varres</value>
+					</option>
+				</origoptions>
+			</test>
+		</tests>
+		<vars>
+			<var>S0
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>S1
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>S3
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>S2
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>vdd
+				<value>1.8</value>
+				<dependentTests>
+					<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>vss
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>sigma
+				<value>3</value>
+			</var>
+		</vars>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+		</plottingoptions>
+		<jobpolicyname>ADE XL Default</jobpolicyname>
+		<runoptions>
+			<mode>Monte Carlo Sampling
+				<runoption>mcmethod
+					<value>all</value>
+				</runoption>
+				<runoption>mcnumpoints
+					<value>500</value>
+				</runoption>
+				<runoption>mcnumbins
+					<value></value>
+				</runoption>
+				<runoption>mcStopEarly
+					<value>0</value>
+				</runoption>
+				<runoption>mcStopMethod
+					<value>Significance Test</value>
+				</runoption>
+				<runoption>samplingmode
+					<value>random</value>
+				</runoption>
+				<runoption>saveprocess
+					<value>1</value>
+				</runoption>
+				<runoption>savemismatch
+					<value>0</value>
+				</runoption>
+				<runoption>mcreferencepoint
+					<value>0</value>
+				</runoption>
+				<runoption>donominal
+					<value>1</value>
+				</runoption>
+				<runoption>saveallplots
+					<value>0</value>
+				</runoption>
+				<runoption>montecarloseed
+					<value></value>
+				</runoption>
+				<runoption>mcstartingrunnumber
+					<value></value>
+				</runoption>
+				<runoption>dumpParamMode
+					<value>yes</value>
+				</runoption>
+			</mode>
+		</runoptions>
+	</active>
+	<history>History
+		<historyentry>Interactive.1
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>frontend:varres_ts:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>varres_ts</value>
+							</option>
+							<option>lib
+								<value>frontend</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>frontend:varres_ts:1_varres_Interactive.1</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>varres_ts</value>
+							</option>
+							<option>lib
+								<value>frontend</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>varres</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>S0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vss
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sun Apr 5 16:07:07 2020</timestamp>
+			<resultsname>/home/rudolfk/masterarbeit/source/implementation/tech_files/umc_65_ll/frontend/varres_ts/adexl/results/data/Interactive.1.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.1.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/informatix.ies.e-technik.tu-darmstadt.de_rudolfk_160708095</localpsfdir>
+			<psfdir>/home/rudolfk/simulation/frontend/varres_ts/adexl/results/data/Interactive.1</psfdir>
+			<simdir>$AXL_PROJECT_DIR/frontend/varres_ts/adexl/results/data/Interactive.1</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/rudolfk/masterarbeit/source/implementation/tech_files/umc_65_ll/frontend/varres_ts/adexl/results/data/Interactive.1.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.1.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.2
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>frontend:varres_ts:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>varres_ts</value>
+							</option>
+							<option>lib
+								<value>frontend</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>frontend:varres_ts:1_varres_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>varres_ts</value>
+							</option>
+							<option>lib
+								<value>frontend</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>varres</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>S0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vss
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sun Apr 5 16:11:05 2020</timestamp>
+			<resultsname>/home/rudolfk/masterarbeit/source/implementation/tech_files/umc_65_ll/frontend/varres_ts/adexl/results/data/Interactive.2.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/informatix.ies.e-technik.tu-darmstadt.de_rudolfk_161105568</localpsfdir>
+			<psfdir>/home/rudolfk/simulation/frontend/varres_ts/adexl/results/data/Interactive.2</psfdir>
+			<simdir>$AXL_PROJECT_DIR/frontend/varres_ts/adexl/results/data/Interactive.2</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/rudolfk/masterarbeit/source/implementation/tech_files/umc_65_ll/frontend/varres_ts/adexl/results/data/Interactive.2.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.3
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">corner
+						<vars>
+							<var>temperature
+								<value>-25 25 85</value>
+							</var>
+							<var>vdd
+								<value>1.62 1.8 1.98</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">l65ll_v181.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+								<modelsection>"ss_ll_io25od33" "ff_ll_io25od33" "fnsp_ll_io25od33" "snfp_ll_io25od33"</modelsection>
+							</model>
+							<model enabled="1">l65ll_v181.lib.scs:1
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+								<modelsection>"ff_ll_res" "ss_ll_res"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">frontend:varres_ts:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>varres_ts</value>
+							</option>
+							<option>lib
+								<value>frontend</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>frontend:varres_ts:1_varres_Interactive.3</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>varres_ts</value>
+							</option>
+							<option>lib
+								<value>frontend</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>varres</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>S0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vss
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sun Apr 5 16:18:06 2020</timestamp>
+			<resultsname>/home/rudolfk/masterarbeit/source/implementation/tech_files/umc_65_ll/frontend/varres_ts/adexl/results/data/Interactive.3.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.3.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/informatix.ies.e-technik.tu-darmstadt.de_rudolfk_161807183</localpsfdir>
+			<psfdir>/home/rudolfk/simulation/frontend/varres_ts/adexl/results/data/Interactive.3</psfdir>
+			<simdir>$AXL_PROJECT_DIR/frontend/varres_ts/adexl/results/data/Interactive.3</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/rudolfk/masterarbeit/source/implementation/tech_files/umc_65_ll/frontend/varres_ts/adexl/results/data/Interactive.3.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.3.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.0
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">corner
+						<vars>
+							<var>temperature
+								<value>-25 25 85</value>
+							</var>
+							<var>vdd
+								<value>1.62 1.8 1.98</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">l65ll_v181.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+								<modelsection>"ss_ll_io25od33" "ff_ll_io25od33" "fnsp_ll_io25od33" "snfp_ll_io25od33"</modelsection>
+							</model>
+							<model enabled="1">l65ll_v181.lib.scs:1
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+								<modelsection>"ff_ll_res" "ss_ll_res"</modelsection>
+							</model>
+							<model enabled="0">l65ll_v181_mc.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/Monte_Carlo/l65ll_v181_mc.lib.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">l65ll_v181_mc.lib.scs:1
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/Monte_Carlo/l65ll_v181_mc.lib.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">MC
+						<models>
+							<model enabled="0">l65ll_v181.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">l65ll_v181.lib.scs:1
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/l65ll_v181.lib.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">l65ll_v181_mc.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/Monte_Carlo/l65ll_v181_mc.lib.scs</modelfile>
+								<modelsection>"mc_ll_io25od33"</modelsection>
+							</model>
+							<model enabled="1">l65ll_v181_mc.lib.scs:1
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cadstud/cds03/Cadence_Libraries/UMC_TECH/UMC_65/umc_65_ll_ver_B11PB/Models/Spectre/Monte_Carlo/l65ll_v181_mc.lib.scs</modelfile>
+								<modelsection>"mc_ll_res"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>1</overwritehistory>
+				<tests>
+					<test enabled="1">frontend:varres_ts:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>varres_ts</value>
+							</option>
+							<option>lib
+								<value>frontend</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>frontend:varres_ts:1_varres_Interactive.0</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>varres_ts</value>
+							</option>
+							<option>lib
+								<value>frontend</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>varres</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>S0
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vss
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">frontend:varres_ts:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>sigma
+						<value>3</value>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>500</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcStopMethod
+							<value>Significance Test</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>0</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>0</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>yes</value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Apr  8 09:35:53 2020
+</timestamp>
+			<resultsname>/home/rudolfk/masterarbeit/source/implementation/tech_files/umc_65_ll/frontend/varres_ts/adexl/results/data/Interactive.0.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.0.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/informatix.ies.e-technik.tu-darmstadt.de_rudolfk_093554275</localpsfdir>
+			<psfdir>/home/rudolfk/simulation/frontend/varres_ts/adexl/results/data/Interactive.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/frontend/varres_ts/adexl/results/data/Interactive.0</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/rudolfk/masterarbeit/source/implementation/tech_files/umc_65_ll/frontend/varres_ts/adexl/results/data/Interactive.0.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.0.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>
