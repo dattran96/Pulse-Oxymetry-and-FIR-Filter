@@ -2,24 +2,23 @@
 
 This project includes the analog-frontend and the digital-backend:
 
-- Analog-frontend: - Signal from dual LED( red led and infrared led) will be amplified through an Op-Amp before it's fed into an ADC.
+- Analog-frontend: - Signal from dual LED( red led and infrared led) will be amplified through an Op-Amp before it's fed into an ADC.<br/>
 
-- Digital-backend: - Controller written in Verilog to generate control sigals for these above dual LED.
-                   
+- Digital-backend: - Controller written in Verilog to generate control sigals for these above dual LED. <br/>
                    - FIR Controller written in Verilog to improve the result.
 
 
 Guidence:
 
 1. Open Synopsis Design Vision, import verilog top module to generate Netlist for Controller and FIR filter:
-  import Top_Module_Controller_and_FIR.v
+  import Top_Module_Controller_and_FIR.v <br/>
 
 2. In Cadence Encounter, execute the follow file to do floorplan, placement and routing:
-  01-setup_tech
-  02-load_design
-  03-floorplan.tcl
-  04-placement.tcl
-  05-clock_tree.tcl
-  06-route.tcl
-  07-finishing.tcl
-  08-output_files.tcl
+  01-setup_tech <br/>
+  02-load_design <br/> 
+  03-floorplan.tcl <br/>
+  04-placement.tcl <br/>
+  05-clock_tree.tcl <br/>
+  06-route.tcl <br/>
+  07-finishing.tcl <br/>
+  08-output_files.tcl <br/>
